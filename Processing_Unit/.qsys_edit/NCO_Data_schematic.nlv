@@ -1,0 +1,13 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst NCO_Data.clk_0 -pg 1 -lvl 1 -y 70
+preplace inst NCO_Data.NCO_Data -pg 1 -lvl 2 -y 30
+preplace inst NCO_Data -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>NCO_Data</net_container>(MASTER)NCO_Data.out,(MASTER)NCO_Data.nco_data_out) 1 2 1 N
+preplace netloc POINT_TO_POINT<net_container>NCO_Data</net_container>(SLAVE)NCO_Data.clk,(MASTER)clk_0.clk) 1 1 1 290
+preplace netloc POINT_TO_POINT<net_container>NCO_Data</net_container>(MASTER)clk_0.clk_reset,(SLAVE)NCO_Data.rst) 1 1 1 330
+preplace netloc EXPORT<net_container>NCO_Data</net_container>(SLAVE)NCO_Data.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>NCO_Data</net_container>(SLAVE)clk_0.clk_in,(SLAVE)NCO_Data.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>NCO_Data</net_container>(SLAVE)NCO_Data.nco_data_in,(SLAVE)NCO_Data.in) 1 0 2 NJ 140 NJ
+levelinfo -pg 1 0 80 560
+levelinfo -hier NCO_Data 90 120 360 450

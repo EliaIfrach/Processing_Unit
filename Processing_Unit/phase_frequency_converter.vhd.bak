@@ -1,0 +1,44 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Phase_Frequency_Converter is
+	port (
+		fifo_clk :in std_logic;
+		rst 	 :in std_logic;
+		i_angle  :in std_logic_vector (31 downto 0);
+		o_omega	 :out std_logic_vector (31 downto 0)
+	);
+end entity Phase_Frequency_Converter;
+
+architecture Converter of Phase_Frequency_Converter is
+type State_type is (A, B); 
+	 signal state : State_Type; 
+	
+signal stage_1 :integer;
+begin
+	
+	process(clk,rst)
+	begin
+		if(rst = '0') then
+		o_omega <= (others => '0');
+		stage_1	<= (others => '0');
+		state <= A;
+
+		elsif(rising_edge(clk)) then
+		
+			case state is
+		when A=>
+			
+			
+			
+		when B=>
+		
+		
+		WHEN others =>
+				state <= A;
+
+		end case;	
+		end if;
+		end process;
+	end Converter;

@@ -1,0 +1,85 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.STD_LOGIC_SIGNED.ALL;
+
+entity cordic is
+	port (
+		clk 	    	:in std_logic;
+		rst 		 :in std_logic;
+		i_I_filter   :in std_logic_vector(44 downto 0);
+		i_Q_filter   :in std_logic_unsigned(44 downto 0);
+		o_data_angle :out std_logic_vector(6 downto 0) --ELIA change the size to the real size data :-)
+		o_valid 	 :out std_logic_vector
+	);
+end entity cordic;
+
+architecture calc of cordic is
+
+type State_type is (A, B); 
+	signal state : State_Type; 
+
+type mem_t1 is array(0 to 7) of unsigned(10 downto 0);	--2pow-i window
+type mem_t2 is array(0 to 7) of unsigned(13 downto 0);	--tan window
+
+--2pow-i window:
+	signal ram_2i : mem_t1;	
+	attribute ram_init_file : string;
+
+	attribute ram_init_file of ram_2i :
+	signal is "2_pow_-i.mif";
+	
+--tan window:
+	signal ram_tan : mem_t2;	
+	attribute ram_init_file of ram_tan :
+	signal is "tan.mif";
+	
+signal count :integer range 0 to 7;
+signal X :std_logic_vector(27 downto 0);
+signal Y :std_logic_vector(27 downto 0);
+begin	
+	process(clk,rst)
+	begin
+	X <= conv_integer(signed(i_I_filter(44 downto 17)));
+	Y <= conv_integer(signed(i_Q_filter(44 downto 17)));
+	
+	
+	if(rst = '0') then
+		--outputs
+		state <= A;
+		o_data_angle <= (others => '0');
+		o_valid <= '0';
+		--signals
+		count <= (others => '0');
+		X <= (others => '0');
+		Y <= (others => '0');
+	elsif(rising_edge(clk)) then
+
+	case state is
+	
+	when A=>
+		if (count = '0') then	
+			
+		
+			
+		count <= count + 1;	
+		end if;
+	
+	when B=>
+		if (count > 0) then
+			
+			
+		
+			
+		count <= count + 1;	
+		end if;
+		
+		WHEN others =>
+			State <= A;
+			
+
+end case;	
+end if;
+end process;
+	
+end architecture;

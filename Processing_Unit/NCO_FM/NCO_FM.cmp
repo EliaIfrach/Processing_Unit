@@ -1,0 +1,11 @@
+	component NCO_FM is
+		port (
+			clk_clk          : in  std_logic                     := 'X';             -- clk
+			nco_fm_in_valid  : in  std_logic                     := 'X';             -- valid
+			nco_fm_in_data   : in  std_logic_vector(30 downto 0) := (others => 'X'); -- data
+			nco_fm_out_data  : out std_logic_vector(13 downto 0);                    -- data
+			nco_fm_out_valid : out std_logic;                                        -- valid
+			reset_reset_n    : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component NCO_FM;
+

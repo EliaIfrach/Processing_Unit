@@ -1,0 +1,36 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\FM\fifo_decimation.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\FM\fifo_decimation" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading FM/fifo_decimation.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding fifo_decimation [altera_avalon_fifo 17.0]
+Progress: Parameterizing module fifo_decimation
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\FM\fifo_decimation.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\FM\fifo_decimation\synthesis" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading FM/fifo_decimation.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding fifo_decimation [altera_avalon_fifo 17.0]
+Progress: Parameterizing module fifo_decimation
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fifo_decimation: Generating fifo_decimation "fifo_decimation" for QUARTUS_SYNTH
+Info: fifo_decimation: Starting RTL generation for module 'fifo_decimation_fifo_decimation'
+Info: fifo_decimation:   Generation command is [exec C:/intelfpga/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/17.0/quartus/bin64/perl/lib -I C:/intelfpga/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/17.0/quartus/sopc_builder/bin -I C:/intelfpga/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/intelfpga/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=fifo_decimation_fifo_decimation --dir=C:/Users/ELIAYF~1/AppData/Local/Temp/alt9206_3259781556772130082.dir/0001_fifo_decimation_gen/ --quartus_dir=C:/intelfpga/17.0/quartus --verilog --config=C:/Users/ELIAYF~1/AppData/Local/Temp/alt9206_3259781556772130082.dir/0001_fifo_decimation_gen//fifo_decimation_fifo_decimation_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_decimation: Done RTL generation for module 'fifo_decimation_fifo_decimation'
+Info: fifo_decimation: "fifo_decimation" instantiated altera_avalon_fifo "fifo_decimation"
+Info: rst_controller: "fifo_decimation" instantiated altera_reset_controller "rst_controller"
+Info: fifo_decimation: Done "fifo_decimation" with 3 modules, 6 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

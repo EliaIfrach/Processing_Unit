@@ -1,0 +1,33 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_TEST.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_TEST" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading FM/NCO_TEST.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nco_iq [altera_nco_ii 17.0]
+Progress: Parameterizing module nco_iq
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_TEST.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_TEST\synthesis" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading FM/NCO_TEST.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nco_iq [altera_nco_ii 17.0]
+Progress: Parameterizing module nco_iq
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: NCO_TEST: Generating NCO_TEST "NCO_TEST" for QUARTUS_SYNTH
+Info: nco_iq: "NCO_TEST" instantiated altera_nco_ii "nco_iq"
+Info: rst_controller: "NCO_TEST" instantiated altera_reset_controller "rst_controller"
+Info: NCO_TEST: Done "NCO_TEST" with 3 modules, 17 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

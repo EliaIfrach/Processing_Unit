@@ -1,0 +1,207 @@
+Flow report for FM
+Wed Aug 24 14:53:38 2022
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Wed Aug 24 14:53:12 2022           ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
+; Revision Name                   ; FM                                              ;
+; Top-level Entity Name           ; Project_BDF                                     ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CEBA4F23C7                                     ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 1,793 / 18,480 ( 10 % )                         ;
+; Total registers                 ; 4572                                            ;
+; Total pins                      ; 2 / 224 ( < 1 % )                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 1,987,820 / 3,153,920 ( 63 % )                  ;
+; Total DSP Blocks                ; 55 / 66 ( 83 % )                                ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 08/24/2022 14:50:18 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; FM                  ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                                                                                                                          ;
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------------+------------------+
+; Assignment Name                     ; Value                                                                                                                                                                                                                                        ; Default Value ; Entity Name       ; Section Id       ;
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------------+------------------+
+; COMPILER_SIGNATURE_ID               ; 198696041142328.166134181722800                                                                                                                                                                                                              ; --            ; --                ; --               ;
+; ENABLE_SIGNALTAP                    ; On                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                                                                                                                                                                            ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_TEST/synthesis/../NCO_TEST.cmp                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_TEST/synthesis/../../NCO_TEST.qsys                                                                                                                                                                                                       ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_150/synthesis/../NCO_150.cmp                                                                                                                                                                                                             ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_150/synthesis/../../NCO_150.qsys                                                                                                                                                                                                         ; --            ; --                ; --               ;
+; MISC_FILE                           ; fifo_decimation_2/synthesis/../fifo_decimation_2.cmp                                                                                                                                                                                         ; --            ; --                ; --               ;
+; MISC_FILE                           ; fifo_decimation_2/synthesis/../../fifo_decimation_2.qsys                                                                                                                                                                                     ; --            ; --                ; --               ;
+; MISC_FILE                           ; fifo_decimation/synthesis/../fifo_decimation.cmp                                                                                                                                                                                             ; --            ; --                ; --               ;
+; MISC_FILE                           ; fifo_decimation/synthesis/../../fifo_decimation.qsys                                                                                                                                                                                         ; --            ; --                ; --               ;
+; MISC_FILE                           ; PLL/synthesis/../PLL.cmp                                                                                                                                                                                                                     ; --            ; --                ; --               ;
+; MISC_FILE                           ; PLL/synthesis/../../PLL.qsys                                                                                                                                                                                                                 ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_IQ/synthesis/../NCO_IQ.cmp                                                                                                                                                                                                               ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_IQ/synthesis/../../NCO_IQ.qsys                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_Data/synthesis/../NCO_Data.cmp                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_Data/synthesis/../../NCO_Data.qsys                                                                                                                                                                                                       ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_FM/synthesis/../NCO_FM.cmp                                                                                                                                                                                                               ; --            ; --                ; --               ;
+; MISC_FILE                           ; NCO_FM/synthesis/../../NCO_FM.qsys                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                                                                                                                                                                                       ; --            ; Project_BDF       ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                                                                                                                                                                                       ; --            ; Project_BDF       ; Top              ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                                                                                                                                                                                       ; --            ; Project_BDF       ; Top              ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                                                                                                                                                                                          ; --            ; --                ; --               ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                                                                                                                                                                        ; --            ; --                ; --               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                                                                                                                                                                                 ; --            ; --                ; --               ;
+; SLD_FILE                            ; NCO_TEST/synthesis/NCO_TEST.debuginfo                                                                                                                                                                                                        ; --            ; --                ; --               ;
+; SLD_FILE                            ; NCO_150/synthesis/NCO_150.debuginfo                                                                                                                                                                                                          ; --            ; --                ; --               ;
+; SLD_FILE                            ; fifo_decimation_2/synthesis/fifo_decimation_2.debuginfo                                                                                                                                                                                      ; --            ; --                ; --               ;
+; SLD_FILE                            ; fifo_decimation/synthesis/fifo_decimation.debuginfo                                                                                                                                                                                          ; --            ; --                ; --               ;
+; SLD_FILE                            ; PLL/synthesis/PLL.debuginfo                                                                                                                                                                                                                  ; --            ; --                ; --               ;
+; SLD_FILE                            ; NCO_IQ/synthesis/NCO_IQ.debuginfo                                                                                                                                                                                                            ; --            ; --                ; --               ;
+; SLD_FILE                            ; NCO_Data/synthesis/NCO_Data.debuginfo                                                                                                                                                                                                        ; --            ; --                ; --               ;
+; SLD_FILE                            ; NCO_FM/synthesis/NCO_FM.debuginfo                                                                                                                                                                                                            ; --            ; --                ; --               ;
+; SLD_FILE                            ; db/Signal_Viewer_auto_stripped.stp                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; SLD_INFO                            ; QSYS_NAME NCO_150 HAS_SOPCINFO 1 GENERATION_ID 1661086791                                                                                                                                                                                    ; --            ; NCO_150           ; --               ;
+; SLD_INFO                            ; QSYS_NAME NCO_Data HAS_SOPCINFO 1 GENERATION_ID 1661096044                                                                                                                                                                                   ; --            ; NCO_Data          ; --               ;
+; SLD_INFO                            ; QSYS_NAME NCO_FM HAS_SOPCINFO 1 GENERATION_ID 1661340559                                                                                                                                                                                     ; --            ; NCO_FM            ; --               ;
+; SLD_INFO                            ; QSYS_NAME NCO_IQ HAS_SOPCINFO 1 GENERATION_ID 1658066444                                                                                                                                                                                     ; --            ; NCO_IQ            ; --               ;
+; SLD_INFO                            ; QSYS_NAME NCO_TEST HAS_SOPCINFO 1 GENERATION_ID 1661085672                                                                                                                                                                                   ; --            ; NCO_TEST          ; --               ;
+; SLD_INFO                            ; QSYS_NAME PLL HAS_SOPCINFO 1 GENERATION_ID 1659263286                                                                                                                                                                                        ; --            ; PLL               ; --               ;
+; SLD_INFO                            ; QSYS_NAME fifo_decimation HAS_SOPCINFO 1 GENERATION_ID 1659445544                                                                                                                                                                            ; --            ; fifo_decimation   ; --               ;
+; SLD_INFO                            ; QSYS_NAME fifo_decimation_2 HAS_SOPCINFO 1 GENERATION_ID 1659795257                                                                                                                                                                          ; --            ; fifo_decimation_2 ; --               ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                                                                                                                                                                                                          ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                                                                                                                                                                                ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_BLOCK_TYPE=AUTO                                                                                                                                                                                                                      ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334534                                                                                                                                                                                                                      ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                                                                                                                                                                                       ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                                                                                                                                                                                ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=2048                                                                                                                                                                                                                        ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                                                                                                                                                                   ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                                                                                                                                                                                               ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                                                                                                                                                                                            ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                                                                                                                                                                                       ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                                                                                                                                                                 ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INCREMENTAL_ROUTING=1                                                                                                                                                                                                                    ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                                                                                                                                                                                          ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=2048                                                                                                                                                                                                                        ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                                                                                                                                                                                                     ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_PIPELINE=0                                                                                                                                                                                                                       ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_PIPELINE=0                                                                                                                                                                                                                           ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_COUNTER_PIPELINE=0                                                                                                                                                                                                                       ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                                                                                                                                                                         ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                                                                                                                                                                 ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                                                                                                                                                                                ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=64                                                                                                                                                                                                                             ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=64                                                                                                                                                                                                                          ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_BITS=64                                                                                                                                                                                                                ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --                ; after_20fifo_202 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=217                                                                                                                                                                                                                ; --            ; --                ; after_20fifo_202 ;
+; SOPCINFO_FILE                       ; NCO_TEST/synthesis/../../NCO_TEST.sopcinfo                                                                                                                                                                                                   ; --            ; --                ; --               ;
+; SOPCINFO_FILE                       ; NCO_150/synthesis/../../NCO_150.sopcinfo                                                                                                                                                                                                     ; --            ; --                ; --               ;
+; SOPCINFO_FILE                       ; fifo_decimation_2/synthesis/../../fifo_decimation_2.sopcinfo                                                                                                                                                                                 ; --            ; --                ; --               ;
+; SOPCINFO_FILE                       ; fifo_decimation/synthesis/../../fifo_decimation.sopcinfo                                                                                                                                                                                     ; --            ; --                ; --               ;
+; SOPCINFO_FILE                       ; PLL/synthesis/../../PLL.sopcinfo                                                                                                                                                                                                             ; --            ; --                ; --               ;
+; SOPCINFO_FILE                       ; NCO_IQ/synthesis/../../NCO_IQ.sopcinfo                                                                                                                                                                                                       ; --            ; --                ; --               ;
+; SOPCINFO_FILE                       ; NCO_Data/synthesis/../../NCO_Data.sopcinfo                                                                                                                                                                                                   ; --            ; --                ; --               ;
+; SOPCINFO_FILE                       ; NCO_FM/synthesis/../../NCO_FM.sopcinfo                                                                                                                                                                                                       ; --            ; --                ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                                                                                                                                                                           ; --            ; --                ; --               ;
+; TOP_LEVEL_ENTITY                    ; Project_BDF                                                                                                                                                                                                                                  ; FM            ; --                ; --               ;
+; USE_SIGNALTAP_FILE                  ; Signal_Viewer.stp                                                                                                                                                                                                                            ; --            ; --                ; --               ;
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:58     ; 1.0                     ; 5052 MB             ; 00:01:31                           ;
+; Fitter                    ; 00:01:33     ; 1.3                     ; 6611 MB             ; 00:04:35                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 4897 MB             ; 00:00:12                           ;
+; TimeQuest Timing Analyzer ; 00:00:24     ; 2.1                     ; 5250 MB             ; 00:00:46                           ;
+; Total                     ; 00:03:07     ; --                      ; --                  ; 00:07:04                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; LAPTOP-VK5FSFEF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; LAPTOP-VK5FSFEF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; LAPTOP-VK5FSFEF  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-VK5FSFEF  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off FM -c FM
+quartus_fit --read_settings_files=off --write_settings_files=off FM -c FM
+quartus_asm --read_settings_files=off --write_settings_files=off FM -c FM
+quartus_sta FM -c FM
+
+
+

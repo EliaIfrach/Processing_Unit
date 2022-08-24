@@ -1,0 +1,15 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst fifo_decimation_2.fifo_decimation_2 -pg 1 -lvl 1 -y 30
+preplace inst fifo_decimation_2 -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst fifo_decimation_2.clk_0 -pg 1 -lvl 1 -y 170
+preplace netloc EXPORT<net_container>fifo_decimation_2</net_container>(SLAVE)fifo_decimation_2.clk_out,(SLAVE)fifo_decimation_2.fifo_decimation_2_clk_out) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fifo_decimation_2</net_container>(SLAVE)fifo_decimation_2.clk_in,(SLAVE)fifo_decimation_2.fifo_decimation_2_clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fifo_decimation_2</net_container>(SLAVE)fifo_decimation_2.fifo_decimation_2_reset_in,(SLAVE)fifo_decimation_2.reset_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fifo_decimation_2</net_container>(SLAVE)fifo_decimation_2.fifo_decimation_2_in,(SLAVE)fifo_decimation_2.in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fifo_decimation_2</net_container>(SLAVE)fifo_decimation_2.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fifo_decimation_2</net_container>(SLAVE)fifo_decimation_2.reset_out,(SLAVE)fifo_decimation_2.fifo_decimation_2_reset_out) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fifo_decimation_2</net_container>(SLAVE)fifo_decimation_2.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fifo_decimation_2</net_container>(SLAVE)fifo_decimation_2.out,(SLAVE)fifo_decimation_2.fifo_decimation_2_out) 1 0 1 NJ
+levelinfo -pg 1 0 180 420
+levelinfo -hier fifo_decimation_2 190 240 410

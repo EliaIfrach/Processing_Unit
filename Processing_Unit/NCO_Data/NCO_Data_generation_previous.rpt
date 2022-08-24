@@ -1,0 +1,33 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_Data.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_Data" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading FM/NCO_Data.qsys
+Progress: Reading input file
+Progress: Adding NCO_Data [altera_nco_ii 17.0]
+Progress: Parameterizing module NCO_Data
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_Data.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_Data\synthesis" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading FM/NCO_Data.qsys
+Progress: Reading input file
+Progress: Adding NCO_Data [altera_nco_ii 17.0]
+Progress: Parameterizing module NCO_Data
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: NCO_Data: Generating NCO_Data "NCO_Data" for QUARTUS_SYNTH
+Info: NCO_Data: "NCO_Data" instantiated altera_nco_ii "NCO_Data"
+Info: rst_controller: "NCO_Data" instantiated altera_reset_controller "rst_controller"
+Info: NCO_Data: Done "NCO_Data" with 3 modules, 17 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
