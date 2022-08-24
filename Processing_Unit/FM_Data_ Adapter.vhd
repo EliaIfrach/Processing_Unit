@@ -18,7 +18,7 @@ entity FM_Data_Adapter is
 end entity FM_Data_Adapter;
 
 architecture Data of FM_Data_Adapter is
-begin
+begin 
 	data_inc <= "0000000000001";
 	fm_inc <= "000110011001101";
 	inc_150 <= "0000000001100";

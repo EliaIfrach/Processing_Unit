@@ -1,0 +1,15 @@
+	component fifo_decimation_3 is
+		port (
+			clk_clk                             : in  std_logic                     := 'X';             -- clk
+			fifo_decimation_3_clk_out_clk       : in  std_logic                     := 'X';             -- clk
+			fifo_decimation_3_in_writedata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			fifo_decimation_3_in_write          : in  std_logic                     := 'X';             -- write
+			fifo_decimation_3_in_waitrequest    : out std_logic;                                        -- waitrequest
+			fifo_decimation_3_out_readdata      : out std_logic_vector(31 downto 0);                    -- readdata
+			fifo_decimation_3_out_read          : in  std_logic                     := 'X';             -- read
+			fifo_decimation_3_out_waitrequest   : out std_logic;                                        -- waitrequest
+			fifo_decimation_3_reset_out_reset_n : in  std_logic                     := 'X';             -- reset_n
+			reset_reset_n                       : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component fifo_decimation_3;
+

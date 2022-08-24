@@ -7,7 +7,7 @@
 --				  i_Q				- input Q signal 
 --            i_I				- input I signal
 --				  i_reset		- input reset => '1' reset all
---
+--  
 --	outputs 	: o_arctan 		- Output arctan(Q/I)
 
 

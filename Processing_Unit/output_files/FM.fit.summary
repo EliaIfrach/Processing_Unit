@@ -1,17 +1,17 @@
-Fitter Status : Successful - Wed Aug 24 14:52:55 2022
+Fitter Status : Successful - Wed Aug 24 17:12:35 2022
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 Revision Name : FM
 Top-level Entity Name : Project_BDF
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 1,793 / 18,480 ( 10 % )
-Total registers : 4572
+Logic utilization (in ALMs) : 11,608 / 18,480 ( 63 % )
+Total registers : 16442
 Total pins : 2 / 224 ( < 1 % )
 Total virtual pins : 0
-Total block memory bits : 1,987,820 / 3,153,920 ( 63 % )
-Total RAM Blocks : 242 / 308 ( 79 % )
-Total DSP Blocks : 55 / 66 ( 83 % )
+Total block memory bits : 2,082,617 / 3,153,920 ( 66 % )
+Total RAM Blocks : 260 / 308 ( 84 % )
+Total DSP Blocks : 66 / 66 ( 100 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0

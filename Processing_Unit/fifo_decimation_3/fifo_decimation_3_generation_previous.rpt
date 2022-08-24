@@ -1,0 +1,34 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\fifo_decimation_3.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\fifo_decimation_3" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading Processing_Unit/fifo_decimation_3.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding fifo_decimation_3 [altera_avalon_fifo 17.0]
+Progress: Parameterizing module fifo_decimation_3
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\fifo_decimation_3.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\fifo_decimation_3\synthesis" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading Processing_Unit/fifo_decimation_3.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding fifo_decimation_3 [altera_avalon_fifo 17.0]
+Progress: Parameterizing module fifo_decimation_3
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fifo_decimation_3: Generating fifo_decimation_3 "fifo_decimation_3" for QUARTUS_SYNTH
+Error: Cannot find clock for fifo_decimation_3.clk_in. If fifo_decimation_3.clk_in is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller in the generated RTL.
+Error: Cannot find clock for fifo_decimation_3.clk_out. If fifo_decimation_3.clk_out is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_001, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_001 in the generated RTL.
+Error: Generation stopped, 3 or more modules remaining
+Info: fifo_decimation_3: Done "fifo_decimation_3" with 3 modules, 1 files
+Error: qsys-generate failed with exit code 1: 3 Errors, 0 Warnings
+Info: Finished: Create HDL design files for synthesis
