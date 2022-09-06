@@ -1,0 +1,41 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FFT.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FFT" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading Processing_Unit/FFT.qsys
+Progress: Reading input file
+Progress: Adding FFT_Comp [altera_fft_ii 17.0]
+Progress: Parameterizing module FFT_Comp
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: FFT.FFT_Comp: Radix-2 digit reverse implied
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FFT.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FFT\synthesis" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading Processing_Unit/FFT.qsys
+Progress: Reading input file
+Progress: Adding FFT_Comp [altera_fft_ii 17.0]
+Progress: Parameterizing module FFT_Comp
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: FFT.FFT_Comp: Radix-2 digit reverse implied
+Info: FFT: Generating FFT "FFT" for QUARTUS_SYNTH
+Info: FFT_Comp: --- add file: FFT_FFT_Comp_opt_twi3.hex
+Info: FFT_Comp: --- add file: FFT_FFT_Comp_opt_twr2.hex
+Info: FFT_Comp: --- add file: FFT_FFT_Comp_opt_twr3.hex
+Info: FFT_Comp: --- add file: FFT_FFT_Comp_opt_twi1.hex
+Info: FFT_Comp: --- add file: FFT_FFT_Comp_opt_twr1.hex
+Info: FFT_Comp: --- add file: FFT_FFT_Comp_opt_twi2.hex
+Info: FFT_Comp: "FFT" instantiated altera_fft_ii "FFT_Comp"
+Info: rst_controller: "FFT" instantiated altera_reset_controller "rst_controller"
+Info: FFT: Done "FFT" with 3 modules, 51 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

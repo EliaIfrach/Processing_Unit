@@ -41,15 +41,15 @@ agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "i_I_filter[27..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "i_I_filter[27..0]" (rect 21 59 77 71)(font "Arial" ))
+		(text "i_I_filter[26..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "i_I_filter[26..0]" (rect 21 59 77 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "i_Q_filter[27..0]" (rect 0 0 61 12)(font "Arial" ))
-		(text "i_Q_filter[27..0]" (rect 21 75 82 87)(font "Arial" ))
+		(text "i_Q_filter[26..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "i_Q_filter[26..0]" (rect 21 75 82 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port

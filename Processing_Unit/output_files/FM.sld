@@ -1,5 +1,10 @@
 <sld_project_info>
   <sld_infos>
+    <sld_info hpath="FFT:inst32" name="inst32">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FFT HAS_SOPCINFO 1 GENERATION_ID 1661781102"/>
+      </assignment_values>
+    </sld_info>
     <sld_info hpath="NCO_150:inst1" name="inst1">
       <assignment_values>
         <assignment_value text="QSYS_NAME NCO_150 HAS_SOPCINFO 1 GENERATION_ID 1661086791"/>

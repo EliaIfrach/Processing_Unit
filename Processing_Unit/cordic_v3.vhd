@@ -6,8 +6,8 @@ entity cordic_v3 is
 	port (
 		clk 	     :in std_logic;
 		rst 		 :in std_logic;
-		i_I_filter   :in std_logic_vector(27 downto 0);
-		i_Q_filter   :in std_logic_vector(27 downto 0);
+		i_I_filter   :in std_logic_vector(26 downto 0);
+		i_Q_filter   :in std_logic_vector(26 downto 0);
 		o_data_angle :out signed (18 downto 0); --sfix17_EN8
 		o_valid 	 :out std_logic;
 
@@ -119,8 +119,8 @@ begin
                     flagA <= '0';
                     flagB <= '0';
                     flag_RST <= '0';
-                    Q_type <= i_Q_filter(27);
-                    I_type <= i_I_filter(27);
+                    Q_type <= i_Q_filter(26);
+                    I_type <= i_I_filter(26);
                     -------------------------------------------------------
                     if(I_type = '1' AND Q_type = '0' AND count_fixed_pn = '0') then 
                         count_fixed_pn <= '1';

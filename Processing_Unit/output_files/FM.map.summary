@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Aug 24 17:06:46 2022
+Analysis & Synthesis Status : Successful - Tue Sep 06 15:48:41 2022
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 Revision Name : FM
 Top-level Entity Name : Project_BDF
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 19341
+Total registers : 24261
 Total pins : 2
 Total virtual pins : 0
-Total block memory bits : 2,082,617
+Total block memory bits : 1,904,729
 Total DSP Blocks : 66
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
