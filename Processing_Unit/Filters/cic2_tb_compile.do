@@ -1,3 +1,3 @@
 vlib work
-vcom  cic2.vhd
-vcom  cic2_tb.vhd
+vcom  CIC2.vhd
+vcom  CIC2_tb.vhd

@@ -1,2 +1,2 @@
 vlib work
-vcom  cic2.vhd
+vcom  CIC2.vhd
