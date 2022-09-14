@@ -22,7 +22,7 @@ begin
         if(rst='0') then
             out_data <= (others => '0');
         elsif(rising_edge(clk)) then
-            out_data <= holder + data_150_in;                   
+            out_data <= (holder + data_150_in)/4;                   
         end if;
     end process;
 end architecture rtl;

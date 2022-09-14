@@ -8,7 +8,7 @@
   </columns>
  </systemtable>
  <library
-   expandedCategories="Library,Project,Library/DSP,Library/DSP/Transforms" />
- <window width="1366" height="720" x="0" y="0" />
+   expandedCategories="Library,Library/DSP/Transforms,Library/DSP,Project" />
+ <window width="1366" height="720" x="-189" y="-903" />
  <generation synthesis="VHDL" />
 </preferences>
