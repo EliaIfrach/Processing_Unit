@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="alt_sld_fab" kind="alt_sld_fab" version="1.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2022.09.14.15:17:05 -->
+ <!-- 2022.09.16.16:30:52 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_DEVICE_FAMILY">
   <type>java.lang.String</type>
@@ -56,7 +56,7 @@
 the requested settings for a module instance. -->
   <parameter name="DESIGN_HASH">
    <type>java.lang.String</type>
-   <value>aef58f488b8a18b3e6a4</value>
+   <value>48d12af648818d538ca8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -80,7 +80,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SETTINGS">
    <type>java.lang.String</type>
-   <value>{fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 14 ir_width 10 psig 9b67919e} </value>
+   <value>{fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 1 ir_width 10 psig 9b67919e} </value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -104,7 +104,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="EP_INFOS">
    <type>java.lang.String</type>
-   <value>{hpath {sld_signaltap:Integral} } </value>
+   <value>{hpath {sld_signaltap:FFT} } </value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -128,7 +128,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="COMPOSED_SETTINGS">
    <type>java.lang.String</type>
-   <value>{fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 14 ir_width 10 bridge_agent 0 prefer_host {} } </value>
+   <value>{fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 1 ir_width 10 bridge_agent 0 prefer_host {} } </value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1054,7 +1054,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SETTINGS">
    <type>java.lang.String</type>
-   <value>{mfr_code 110 type_code 0 version 6 instance 14 ir_width 10 bridge_agent 0 prefer_host {} } </value>
+   <value>{mfr_code 110 type_code 0 version 6 instance 1 ir_width 10 bridge_agent 0 prefer_host {} } </value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1086,7 +1086,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="NODE_INFO">
    <type>java.lang.String</type>
-   <value>00110000000000000110111000001110</value>
+   <value>00110000000000000110111000000001</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1363,7 +1363,7 @@ parameters are a RESULT of the module parameters. -->
    </assignment>
    <assignment>
     <name>debug.encodedSldId</name>
-    <value>805334542</value>
+    <value>805334529</value>
    </assignment>
    <assignment>
     <name>debug.providesServices</name>
@@ -1627,7 +1627,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="DESIGN_HASH">
    <type>java.lang.String</type>
-   <value>aef58f488b8a18b3e6a4</value>
+   <value>48d12af648818d538ca8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>

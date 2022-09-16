@@ -7,9 +7,9 @@ entity pow is
 port(
 	clk 		:in std_logic;
 	rst 		:in std_logic;
-	real_in 	:in std_logic_vector(24 downto 0);
-	image_in 	:in std_logic_vector(24 downto 0);
-	pow_result	:out std_logic_vector(49 downto 0));
+	real_in 	:in std_logic_vector(28 downto 0);
+	image_in 	:in std_logic_vector(28 downto 0);
+	pow_result	:out std_logic_vector(57 downto 0));
 	
 end entity;
 
@@ -19,7 +19,7 @@ begin
 	process(clk,rst)
 	begin
 	if(rst = '0') then
-		pow_result <= "00000000000000000000000000000000000000000000000000";
+		pow_result <= (others => '0');
 	elsif(rising_edge(clk)) then
 			pow_result <= ((real_in * real_in) + (image_in * image_in));
 end if;

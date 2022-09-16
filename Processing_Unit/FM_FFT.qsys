@@ -6,22 +6,22 @@
    version="1.0"
    description=""
    tags=""
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element FM_FFT
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
    element clk_0
    {
       datum _sortIndex
       {
          value = "0";
-         type = "int";
-      }
-   }
-   element fft_ii_0
-   {
-      datum _sortIndex
-      {
-         value = "1";
          type = "int";
       }
    }
@@ -39,7 +39,7 @@
  <parameter name="hideFromIPCatalog" value="false" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="" />
+ <parameter name="projectName" value="FM.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />
@@ -49,22 +49,16 @@
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
  <interface
    name="fft_ii_0_sink"
-   internal="fft_ii_0.sink"
+   internal="FM_FFT.sink"
    type="avalon_streaming"
    dir="end" />
  <interface
    name="fft_ii_0_source"
-   internal="fft_ii_0.source"
+   internal="FM_FFT.source"
    type="avalon_streaming"
    dir="start" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
- <module name="clk_0" kind="clock_source" version="17.0" enabled="1">
-  <parameter name="clockFrequency" value="50000000" />
-  <parameter name="clockFrequencyKnown" value="true" />
-  <parameter name="inputClockFrequency" value="0" />
-  <parameter name="resetSynchronousEdges" value="NONE" />
- </module>
- <module name="fft_ii_0" kind="altera_fft_ii" version="17.0" enabled="1">
+ <module name="FM_FFT" kind="altera_fft_ii" version="17.0" enabled="1">
   <parameter name="data_flow" value="Variable Streaming" />
   <parameter name="data_rep" value="Fixed Point" />
   <parameter name="design_env" value="QSYS" />
@@ -82,12 +76,14 @@
   <parameter name="selected_device_family" value="Cyclone V" />
   <parameter name="twid_width" value="18" />
  </module>
- <connection kind="clock" version="17.0" start="clk_0.clk" end="fft_ii_0.clk" />
- <connection
-   kind="reset"
-   version="17.0"
-   start="clk_0.clk_reset"
-   end="fft_ii_0.rst" />
+ <module name="clk_0" kind="clock_source" version="17.0" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <connection kind="clock" version="17.0" start="clk_0.clk" end="FM_FFT.clk" />
+ <connection kind="reset" version="17.0" start="clk_0.clk_reset" end="FM_FFT.rst" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />

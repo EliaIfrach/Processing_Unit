@@ -41,8 +41,8 @@ agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "sink_real[15..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "sink_real[15..0]" (rect 21 59 80 71)(font "Arial" ))
+		(text "sink_real[13..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "sink_real[13..0]" (rect 21 59 80 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
@@ -55,8 +55,8 @@ agreement for further details.
 	(port
 		(pt 216 32)
 		(output)
-		(text "data[41..0]" (rect 0 0 41 12)(font "Arial" ))
-		(text "data[41..0]" (rect 154 27 195 39)(font "Arial" ))
+		(text "data[43..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "data[43..0]" (rect 153 27 195 39)(font "Arial" ))
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
 	(port

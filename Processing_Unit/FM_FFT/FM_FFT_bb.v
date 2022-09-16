@@ -1,7 +1,6 @@
 
 module FM_FFT (
 	clk_clk,
-	reset_reset_n,
 	fft_ii_0_sink_valid,
 	fft_ii_0_sink_ready,
 	fft_ii_0_sink_error,
@@ -13,10 +12,10 @@ module FM_FFT (
 	fft_ii_0_source_error,
 	fft_ii_0_source_startofpacket,
 	fft_ii_0_source_endofpacket,
-	fft_ii_0_source_data);	
+	fft_ii_0_source_data,
+	reset_reset_n);	
 
 	input		clk_clk;
-	input		reset_reset_n;
 	input		fft_ii_0_sink_valid;
 	output		fft_ii_0_sink_ready;
 	input	[1:0]	fft_ii_0_sink_error;
@@ -29,4 +28,5 @@ module FM_FFT (
 	output		fft_ii_0_source_startofpacket;
 	output		fft_ii_0_source_endofpacket;
 	output	[72:0]	fft_ii_0_source_data;
+	input		reset_reset_n;
 endmodule

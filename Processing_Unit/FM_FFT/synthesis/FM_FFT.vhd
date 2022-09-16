@@ -26,7 +26,7 @@ entity FM_FFT is
 end entity FM_FFT;
 
 architecture rtl of FM_FFT is
-	component FM_FFT_fft_ii_0 is
+	component FM_FFT_FM_FFT is
 		port (
 			clk          : in  std_logic                     := 'X';             -- clk
 			reset_n      : in  std_logic                     := 'X';             -- reset_n
@@ -48,7 +48,7 @@ architecture rtl of FM_FFT is
 			source_imag  : out std_logic_vector(28 downto 0);                    -- data
 			source_real  : out std_logic_vector(28 downto 0)                     -- data
 		);
-	end component FM_FFT_fft_ii_0;
+	end component FM_FFT_FM_FFT;
 
 	component altera_reset_controller is
 		generic (
@@ -118,14 +118,14 @@ architecture rtl of FM_FFT is
 
 	signal rst_controller_reset_out_reset           : std_logic;                     -- rst_controller:reset_out -> rst_controller_reset_out_reset:in
 	signal reset_reset_n_ports_inv                  : std_logic;                     -- reset_reset_n:inv -> rst_controller:reset_in0
-	signal rst_controller_reset_out_reset_ports_inv : std_logic;                     -- rst_controller_reset_out_reset:inv -> fft_ii_0:reset_n
-	signal fft_ii_0_source_imag                     : std_logic_vector(28 downto 0); -- port fragment
-	signal fft_ii_0_source_real                     : std_logic_vector(28 downto 0); -- port fragment
-	signal fft_ii_0_fftpts_out                      : std_logic_vector(14 downto 0); -- port fragment
+	signal rst_controller_reset_out_reset_ports_inv : std_logic;                     -- rst_controller_reset_out_reset:inv -> FM_FFT:reset_n
+	signal fm_fft_source_imag                       : std_logic_vector(28 downto 0); -- port fragment
+	signal fm_fft_source_real                       : std_logic_vector(28 downto 0); -- port fragment
+	signal fm_fft_fftpts_out                        : std_logic_vector(14 downto 0); -- port fragment
 
 begin
 
-	fft_ii_0 : component FM_FFT_fft_ii_0
+	fm_fft : component FM_FFT_FM_FFT
 		port map (
 			clk                      => clk_clk,                                  --    clk.clk
 			reset_n                  => rst_controller_reset_out_reset_ports_inv, --    rst.reset_n
@@ -143,9 +143,9 @@ begin
 			source_error             => fft_ii_0_source_error,                    --       .error
 			source_sop               => fft_ii_0_source_startofpacket,            --       .startofpacket
 			source_eop               => fft_ii_0_source_endofpacket,              --       .endofpacket
-			source_real(28 downto 0) => fft_ii_0_source_real(28 downto 0),        --       .data
-			source_imag(28 downto 0) => fft_ii_0_source_imag(28 downto 0),        --       .data
-			fftpts_out(14 downto 0)  => fft_ii_0_fftpts_out(14 downto 0)          --       .data
+			source_real(28 downto 0) => fm_fft_source_real(28 downto 0),          --       .data
+			source_imag(28 downto 0) => fm_fft_source_imag(28 downto 0),          --       .data
+			fftpts_out(14 downto 0)  => fm_fft_fftpts_out(14 downto 0)            --       .data
 		);
 
 	rst_controller : component altera_reset_controller
@@ -217,6 +217,6 @@ begin
 
 	rst_controller_reset_out_reset_ports_inv <= not rst_controller_reset_out_reset;
 
-	fft_ii_0_source_data <= fft_ii_0_source_real(28 downto 0) & fft_ii_0_source_imag(28 downto 0) & fft_ii_0_fftpts_out(14 downto 0);
+	fft_ii_0_source_data <= FM_FFT_source_real(28 downto 0) & FM_FFT_source_imag(28 downto 0) & FM_FFT_fftpts_out(14 downto 0);
 
 end architecture rtl; -- of FM_FFT

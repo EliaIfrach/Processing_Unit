@@ -8,35 +8,35 @@ entity reverse_bit is
 		clk			:in std_logic;
 		rst			:in std_logic;
 		source_sop 	:in std_logic;
-		index_out 	:out std_logic_vector (7 downto 0)
+		index_out 	:out std_logic_vector (13 downto 0)
 		);
 	end entity;
 architecture indexmaker of reverse_bit is
-	signal r_index		:std_logic_vector (7 downto 0);
-	signal counter 		:std_logic_vector (7 downto 0);
+	signal r_index		:std_logic_vector (13 downto 0);
+	signal counter 		:std_logic_vector (13 downto 0);
 	
 begin 
 		
-		reverse: for i in 0 to 7 generate
-				r_index(i) <= counter(7-i);
+		reverse: for i in 0 to 13 generate
+				r_index(i) <= counter(13-i);
 			end generate reverse;
 			
 	process(clk,rst)
 	begin
 		if(rst = '0') then
-			index_out <= "00000000";
-			counter <= "00000000";
+			index_out <= (others => '0');
+			counter <=  (others => '0');
 			
 		elsif(rising_edge(clk)) then
 		
 			counter <= counter + 1;
 			
 			if(source_sop = '1') then
-				index_out <= "00000000";
-				counter <= "00000000";
+				index_out <=  (others => '0');
+				counter <=  (others => '0');
 			end if;
-			if (counter = "11111111") then
-				counter <= "00000000";
+			if (counter = "1111111111111") then
+				counter <=  (others => '0');
 			end if;			
 		end if;
 	index_out <= r_index;		

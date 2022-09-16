@@ -1,28 +1,28 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="aef58f488b8a18b3e6a4"/>
+    <hash md5_digest_80b="48d12af648818d538ca8"/>
   </project>
   <file_info>
     <file device="5CEBA4F23C7" path="FM.sof" usercode="0xFFFFFFFF"/>
   </file_info>
   <hub_info hub_ir_width="10" ir_width="10" node_addr_width="1" node_count="1"/>
   <node_info>
-    <node hpath="sld_signaltap:Integral" instance_id="14" mfg_id="110" node_id="0" sld_node_info="0x30006E0E" version="6">
+    <node hpath="sld_signaltap:FFT" instance_id="1" mfg_id="110" node_id="0" sld_node_info="0x30006E01" version="6">
       <parameters>
         <parameter name="lpm_type" type="string" value="sld_signaltap"/>
-        <parameter name="sld_node_info" type="unknown" value="805334542"/>
+        <parameter name="sld_node_info" type="unknown" value="805334529"/>
         <parameter name="SLD_SECTION_ID" type="string" value="hdl_signaltap_0"/>
         <parameter name="SLD_IP_VERSION" type="dec" value="6"/>
         <parameter name="SLD_IP_MINOR_VERSION" type="dec" value="0"/>
         <parameter name="SLD_COMMON_IP_VERSION" type="dec" value="0"/>
-        <parameter name="sld_data_bits" type="unknown" value="109"/>
-        <parameter name="sld_trigger_bits" type="unknown" value="109"/>
+        <parameter name="sld_data_bits" type="unknown" value="74"/>
+        <parameter name="sld_trigger_bits" type="unknown" value="74"/>
         <parameter name="SLD_NODE_CRC_BITS" type="dec" value="32"/>
         <parameter name="SLD_NODE_CRC_HIWORD" type="dec" value="41394"/>
         <parameter name="SLD_NODE_CRC_LOWORD" type="dec" value="50132"/>
         <parameter name="sld_incremental_routing" type="unknown" value="1"/>
-        <parameter name="sld_sample_depth" type="unknown" value="2048"/>
-        <parameter name="sld_segment_size" type="unknown" value="2048"/>
+        <parameter name="sld_sample_depth" type="unknown" value="8192"/>
+        <parameter name="sld_segment_size" type="unknown" value="8192"/>
         <parameter name="sld_ram_block_type" type="unknown" value="AUTO"/>
         <parameter name="sld_state_bits" type="unknown" value="11"/>
         <parameter name="sld_buffer_full_stop" type="unknown" value="1"/>
@@ -50,14 +50,14 @@
         <parameter name="SLD_ADVANCED_TRIGGER_8" type="string" value="NONE"/>
         <parameter name="SLD_ADVANCED_TRIGGER_9" type="string" value="NONE"/>
         <parameter name="SLD_ADVANCED_TRIGGER_10" type="string" value="NONE"/>
-        <parameter name="sld_inversion_mask_length" type="unknown" value="352"/>
-        <parameter name="sld_inversion_mask" type="unknown" value="0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+        <parameter name="sld_inversion_mask_length" type="unknown" value="249"/>
+        <parameter name="sld_inversion_mask" type="unknown" value="000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
         <parameter name="sld_power_up_trigger" type="unknown" value="0"/>
         <parameter name="SLD_STATE_FLOW_MGR_ENTITY" type="string" value="state_flow_mgr_entity.vhd"/>
         <parameter name="sld_state_flow_use_generated" type="unknown" value="0"/>
         <parameter name="sld_current_resource_width" type="unknown" value="1"/>
         <parameter name="sld_attribute_mem_mode" type="unknown" value="OFF"/>
-        <parameter name="sld_storage_qualifier_bits" type="unknown" value="109"/>
+        <parameter name="sld_storage_qualifier_bits" type="unknown" value="147"/>
         <parameter name="SLD_STORAGE_QUALIFIER_GAP_RECORD" type="dec" value="0"/>
         <parameter name="SLD_STORAGE_QUALIFIER_MODE" type="string" value="OFF"/>
         <parameter name="SLD_STORAGE_QUALIFIER_ENABLE_ADVANCED_CONDITION" type="dec" value="0"/>
@@ -72,6 +72,12 @@
     </node>
   </node_info>
   <sld_infos>
+    <sld_info hpath="FM_FFT:inst7" name="inst7">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FM_FFT HAS_SOPCINFO 1 GENERATION_ID 1663321367"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
     <sld_info hpath="NCO_150:inst1" name="inst1">
       <assignment_values>
         <assignment_value text="QSYS_NAME NCO_150 HAS_SOPCINFO 1 GENERATION_ID 1661086791"/>
@@ -87,36 +93,6 @@
     <sld_info hpath="NCO_FM:inst" name="inst">
       <assignment_values>
         <assignment_value text="QSYS_NAME NCO_FM HAS_SOPCINFO 1 GENERATION_ID 1661340559"/>
-      </assignment_values>
-      <parameters/>
-    </sld_info>
-    <sld_info hpath="NCO_IQ:inst2" name="inst2">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME NCO_IQ HAS_SOPCINFO 1 GENERATION_ID 1658066444"/>
-      </assignment_values>
-      <parameters/>
-    </sld_info>
-    <sld_info hpath="PLL:inst15" name="inst15">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME PLL HAS_SOPCINFO 1 GENERATION_ID 1659263286"/>
-      </assignment_values>
-      <parameters/>
-    </sld_info>
-    <sld_info hpath="fifo_decimation:inst11" name="inst11">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME fifo_decimation HAS_SOPCINFO 1 GENERATION_ID 1659445544"/>
-      </assignment_values>
-      <parameters/>
-    </sld_info>
-    <sld_info hpath="fifo_decimation_2:inst20" name="inst20">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME fifo_decimation_2 HAS_SOPCINFO 1 GENERATION_ID 1659795257"/>
-      </assignment_values>
-      <parameters/>
-    </sld_info>
-    <sld_info hpath="fifo_decimation_3:inst23" name="inst23">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME fifo_decimation_3 HAS_SOPCINFO 1 GENERATION_ID 1661345988"/>
       </assignment_values>
       <parameters/>
     </sld_info>
