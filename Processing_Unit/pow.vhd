@@ -7,9 +7,9 @@ entity pow is
 port(
 	clk 		:in std_logic;
 	rst 		:in std_logic;
-	real_in 	:in std_logic_vector(28 downto 0);
-	image_in 	:in std_logic_vector(28 downto 0);
-	pow_result	:out std_logic_vector(57 downto 0));
+	real_in 	:in std_logic_vector(25 downto 0);
+	image_in 	:in std_logic_vector(25 downto 0);
+	pow_result	:out std_logic_vector(51 downto 0));
 	
 end entity;
 

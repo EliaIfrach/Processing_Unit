@@ -41,22 +41,22 @@ agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "real_in[28..0]" (rect 0 0 50 12)(font "Arial" ))
-		(text "real_in[28..0]" (rect 21 59 71 71)(font "Arial" ))
+		(text "real_in[25..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "real_in[25..0]" (rect 21 59 71 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "image_in[28..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "image_in[28..0]" (rect 21 75 81 87)(font "Arial" ))
+		(text "image_in[25..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "image_in[25..0]" (rect 21 75 81 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 232 32)
 		(output)
-		(text "pow_result[57..0]" (rect 0 0 67 12)(font "Arial" ))
-		(text "pow_result[57..0]" (rect 144 27 211 39)(font "Arial" ))
+		(text "pow_result[51..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "pow_result[51..0]" (rect 145 27 211 39)(font "Arial" ))
 		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(drawing

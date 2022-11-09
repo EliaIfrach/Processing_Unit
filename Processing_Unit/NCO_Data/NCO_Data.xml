@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2022.08.21.18:34:06"
- outputDirectory="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/">
+ date="2022.10.19.13:17:33"
+ outputDirectory="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -61,7 +61,7 @@
    <property name="associatedClock" value="clk" />
    <property name="associatedReset" value="reset" />
    <property name="beatsPerCycle" value="1" />
-   <property name="dataBitsPerSymbol" value="13" />
+   <property name="dataBitsPerSymbol" value="15" />
    <property name="emptyWithinPacket" value="false" />
    <property name="errorDescriptor" value="" />
    <property name="firstSymbolInHighOrderBits" value="true" />
@@ -71,7 +71,7 @@
    <property name="readyLatency" value="0" />
    <property name="symbolsPerBeat" value="1" />
    <port name="nco_data_in_valid" direction="input" role="valid" width="1" />
-   <port name="nco_data_in_data" direction="input" role="data" width="13" />
+   <port name="nco_data_in_data" direction="input" role="data" width="15" />
   </interface>
   <interface name="nco_data_out" kind="avalon_streaming" start="1">
    <property name="associatedClock" value="clk" />
@@ -97,13 +97,13 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="NCO_Data:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CEBA4F23C7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1661096044,AUTO_UNIQUE_ID=(altera_nco_ii:17.0:apr=13,aprf=32,apri=10,aprp=16,arch=large_rom,cordic_arch=parallel,cycles_per_output=1,design_env=QSYS,dpri=4,fmod_pipe=1,freq_out=0.005,fsamp=50.0,hyper_opt=false,hyper_opt_select=false,mpr=10,numba=1,numch=1,phi_inc=1,pmod_pipe=1,real_freq_out=0.006104,selected_device_family=Cyclone V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=false,want_phase_mod=false,want_sin_and_cos=single_output)(clock_source:17.0:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(clock:17.0:)(reset:17.0:)"
+   parameterizationKey="NCO_Data:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CEBA4F23C7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1666174651,AUTO_UNIQUE_ID=(altera_nco_ii:17.0:apr=15,aprf=32,apri=10,aprp=16,arch=large_rom,cordic_arch=parallel,cycles_per_output=1,design_env=QSYS,dpri=4,fmod_pipe=1,freq_out=0.005,fsamp=50.0,hyper_opt=false,hyper_opt_select=false,mpr=10,numba=1,numch=1,phi_inc=3,pmod_pipe=1,real_freq_out=0.004578,selected_device_family=Cyclone V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=false,want_phase_mod=false,want_sin_and_cos=single_output)(clock_source:17.0:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(clock:17.0:)(reset:17.0:)"
    instancePathKey="NCO_Data"
    kind="NCO_Data"
    version="1.0"
    name="NCO_Data">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1661096044" />
+  <parameter name="AUTO_GENERATION_ID" value="1666174651" />
   <parameter name="AUTO_DEVICE" value="5CEBA4F23C7" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -112,77 +112,78 @@
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
   <generatedFiles>
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/NCO_Data.vhd"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/NCO_Data.vhd"
        type="VHDL" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_nco_aprid_dxx.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_nco_mob_rw.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_nco_mob_rw.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_nco_isdr.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_nco_isdr.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_nco_apr_dxx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_dxx_g.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_dxx_g.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_dxx.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_dxx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_gal.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_gal.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_nco_as_m_cen.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_nco_as_m_cen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_altqmcpipe.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_altqmcpipe.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/NCO_Data_NCO_Data_sin.hex"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/NCO_Data_NCO_Data_sin.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/NCO_Data_NCO_Data.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/NCO_Data_NCO_Data.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_altq.ocp"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_altq.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_altqmcash.ocp"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_altqmcash.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_altqmcpipe.ocp"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_altqmcpipe.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/altera_reset_controller.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/altera_reset_controller.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/altera_reset_synchronizer.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/altera_reset_synchronizer.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/altera_reset_controller.sdc"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/altera_reset_controller.sdc"
        type="SDC"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
-   <file path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data.qsys" />
+   <file
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data.qsys" />
   </sourceFiles>
   <childSourceFiles>
    <file
@@ -221,7 +222,7 @@
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_nco_ii:17.0:apr=13,aprf=32,apri=10,aprp=16,arch=large_rom,cordic_arch=parallel,cycles_per_output=1,design_env=QSYS,dpri=4,fmod_pipe=1,freq_out=0.005,fsamp=50.0,hyper_opt=false,hyper_opt_select=false,mpr=10,numba=1,numch=1,phi_inc=1,pmod_pipe=1,real_freq_out=0.006104,selected_device_family=Cyclone V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=false,want_phase_mod=false,want_sin_and_cos=single_output"
+   parameterizationKey="altera_nco_ii:17.0:apr=15,aprf=32,apri=10,aprp=16,arch=large_rom,cordic_arch=parallel,cycles_per_output=1,design_env=QSYS,dpri=4,fmod_pipe=1,freq_out=0.005,fsamp=50.0,hyper_opt=false,hyper_opt_select=false,mpr=10,numba=1,numch=1,phi_inc=3,pmod_pipe=1,real_freq_out=0.004578,selected_device_family=Cyclone V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=false,want_phase_mod=false,want_sin_and_cos=single_output"
    instancePathKey="NCO_Data:.:NCO_Data"
    kind="altera_nco_ii"
    version="17.0"
@@ -238,7 +239,7 @@
   <parameter name="want_dither" value="true" />
   <parameter name="hyper_opt_select" value="false" />
   <parameter name="want_phase_mod" value="false" />
-  <parameter name="apr" value="13" />
+  <parameter name="apr" value="15" />
   <parameter name="hyper_opt" value="false" />
   <parameter name="trig_cycles_per_output" value="1" />
   <parameter name="dpri" value="4" />
@@ -248,62 +249,62 @@
   <parameter name="want_freq_mod" value="false" />
   <parameter name="use_dedicated_multipliers" value="true" />
   <parameter name="want_sin_and_cos" value="single_output" />
-  <parameter name="phi_inc" value="1" />
+  <parameter name="phi_inc" value="3" />
   <parameter name="fmod_pipe" value="1" />
   <parameter name="arch" value="large_rom" />
   <parameter name="freq_out" value="0.005" />
-  <parameter name="real_freq_out" value="0.006104" />
+  <parameter name="real_freq_out" value="0.004578" />
   <generatedFiles>
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_nco_aprid_dxx.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_nco_mob_rw.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_nco_mob_rw.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_nco_isdr.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_nco_isdr.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_nco_apr_dxx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_dxx_g.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_dxx_g.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_dxx.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_dxx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_gal.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_gal.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_nco_as_m_cen.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_nco_as_m_cen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_altqmcpipe.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_altqmcpipe.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/NCO_Data_NCO_Data_sin.hex"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/NCO_Data_NCO_Data_sin.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/NCO_Data_NCO_Data.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/NCO_Data_NCO_Data.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_altq.ocp"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_altq.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_altqmcash.ocp"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_altqmcash.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/asj_altqmcpipe.ocp"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/asj_altqmcpipe.ocp"
        type="OTHER"
        attributes="" />
   </generatedFiles>
@@ -331,15 +332,15 @@
    name="altera_reset_controller">
   <generatedFiles>
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/altera_reset_controller.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/altera_reset_controller.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/altera_reset_synchronizer.v"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/altera_reset_synchronizer.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Elia Yfrach/Desktop/Project/FM/NCO_Data/synthesis/submodules/altera_reset_controller.sdc"
+       path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/NCO_Data/synthesis/submodules/altera_reset_controller.sdc"
        type="SDC"
        attributes="" />
   </generatedFiles>

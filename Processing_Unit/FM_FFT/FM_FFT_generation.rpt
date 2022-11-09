@@ -1,5 +1,5 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FM_FFT.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FM_FFT" --family="Cyclone V" --part=5CEBA4F23C7
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FM_FFT.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FM_FFT" --family="Cyclone V" --part=5CGXFC5C6F27C7
 Progress: Loading Processing_Unit/FM_FFT.qsys
 Progress: Reading input file
 Progress: Adding FM_FFT [altera_fft_ii 17.0]
@@ -15,7 +15,7 @@ Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FM_FFT.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FM_FFT\synthesis" --family="Cyclone V" --part=5CEBA4F23C7
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FM_FFT.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\FM_FFT\synthesis" --family="Cyclone V" --part=5CGXFC5C6F27C7
 Progress: Loading Processing_Unit/FM_FFT.qsys
 Progress: Reading input file
 Progress: Adding FM_FFT [altera_fft_ii 17.0]

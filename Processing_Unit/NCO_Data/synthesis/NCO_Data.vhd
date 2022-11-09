@@ -10,7 +10,7 @@ entity NCO_Data is
 	port (
 		clk_clk            : in  std_logic                     := '0';             --          clk.clk
 		nco_data_in_valid  : in  std_logic                     := '0';             --  nco_data_in.valid
-		nco_data_in_data   : in  std_logic_vector(12 downto 0) := (others => '0'); --             .data
+		nco_data_in_data   : in  std_logic_vector(14 downto 0) := (others => '0'); --             .data
 		nco_data_out_data  : out std_logic_vector(9 downto 0);                     -- nco_data_out.data
 		nco_data_out_valid : out std_logic;                                        --             .valid
 		reset_reset_n      : in  std_logic                     := '0'              --        reset.reset_n
@@ -23,7 +23,7 @@ architecture rtl of NCO_Data is
 			clk       : in  std_logic                     := 'X';             -- clk
 			reset_n   : in  std_logic                     := 'X';             -- reset_n
 			clken     : in  std_logic                     := 'X';             -- valid
-			phi_inc_i : in  std_logic_vector(12 downto 0) := (others => 'X'); -- data
+			phi_inc_i : in  std_logic_vector(14 downto 0) := (others => 'X'); -- data
 			fsin_o    : out std_logic_vector(9 downto 0);                     -- data
 			out_valid : out std_logic                                         -- valid
 		);
@@ -107,7 +107,7 @@ begin
 			clk                    => clk_clk,                                  -- clk.clk
 			reset_n                => rst_controller_reset_out_reset_ports_inv, -- rst.reset_n
 			clken                  => nco_data_in_valid,                        --  in.valid
-			phi_inc_i(12 downto 0) => nco_data_in_data(12 downto 0),            --    .data
+			phi_inc_i(14 downto 0) => nco_data_in_data(14 downto 0),            --    .data
 			fsin_o(9 downto 0)     => nco_data_fsin_o(9 downto 0),              -- out.data
 			out_valid              => nco_data_out_valid                        --    .valid
 		);

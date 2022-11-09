@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="NCO_Data" kind="system" version="17.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2022.08.21.18:34:06 -->
+ <!-- 2022.10.19.13:17:33 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1661096044</value>
+  <value>1666174651</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -210,7 +210,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="apr">
    <type>int</type>
-   <value>13</value>
+   <value>15</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -290,7 +290,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="phi_inc">
    <type>long</type>
-   <value>1</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -298,7 +298,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="real_freq_out">
    <type>double</type>
-   <value>0.006104</value>
+   <value>0.004578</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -504,7 +504,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="dataBitsPerSymbol">
     <type>int</type>
-    <value>13</value>
+    <value>15</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -601,7 +601,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>in_data</name>
     <direction>Input</direction>
-    <width>13</width>
+    <width>15</width>
     <role>data</role>
    </port>
   </interface>
@@ -1651,5 +1651,5 @@ parameters are a RESULT of the module parameters. -->
   <version>17.0</version>
  </plugin>
  <reportVersion>17.0 595</reportVersion>
- <uniqueIdentifier>FC017C3351C700000182C10A2D37</uniqueIdentifier>
+ <uniqueIdentifier>FC017C3351C700000183EFBF929C</uniqueIdentifier>
 </EnsembleReport>

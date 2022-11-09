@@ -14,13 +14,13 @@ entity FM_FFT is
 		fft_ii_0_sink_error           : in  std_logic_vector(1 downto 0)  := (others => '0'); --                .error
 		fft_ii_0_sink_startofpacket   : in  std_logic                     := '0';             --                .startofpacket
 		fft_ii_0_sink_endofpacket     : in  std_logic                     := '0';             --                .endofpacket
-		fft_ii_0_sink_data            : in  std_logic_vector(43 downto 0) := (others => '0'); --                .data
+		fft_ii_0_sink_data            : in  std_logic_vector(42 downto 0) := (others => '0'); --                .data
 		fft_ii_0_source_valid         : out std_logic;                                        -- fft_ii_0_source.valid
 		fft_ii_0_source_ready         : in  std_logic                     := '0';             --                .ready
 		fft_ii_0_source_error         : out std_logic_vector(1 downto 0);                     --                .error
 		fft_ii_0_source_startofpacket : out std_logic;                                        --                .startofpacket
 		fft_ii_0_source_endofpacket   : out std_logic;                                        --                .endofpacket
-		fft_ii_0_source_data          : out std_logic_vector(72 downto 0);                    --                .data
+		fft_ii_0_source_data          : out std_logic_vector(65 downto 0);                    --                .data
 		reset_reset_n                 : in  std_logic                     := '0'              --           reset.reset_n
 	);
 end entity FM_FFT;
@@ -36,7 +36,7 @@ architecture rtl of FM_FFT is
 			sink_sop     : in  std_logic                     := 'X';             -- startofpacket
 			sink_eop     : in  std_logic                     := 'X';             -- endofpacket
 			inverse      : in  std_logic                     := 'X';             -- data
-			fftpts_in    : in  std_logic_vector(14 downto 0) := (others => 'X'); -- data
+			fftpts_in    : in  std_logic_vector(13 downto 0) := (others => 'X'); -- data
 			sink_imag    : in  std_logic_vector(13 downto 0) := (others => 'X'); -- data
 			sink_real    : in  std_logic_vector(13 downto 0) := (others => 'X'); -- data
 			source_valid : out std_logic;                                        -- valid
@@ -44,9 +44,9 @@ architecture rtl of FM_FFT is
 			source_error : out std_logic_vector(1 downto 0);                     -- error
 			source_sop   : out std_logic;                                        -- startofpacket
 			source_eop   : out std_logic;                                        -- endofpacket
-			fftpts_out   : out std_logic_vector(14 downto 0);                    -- data
-			source_imag  : out std_logic_vector(28 downto 0);                    -- data
-			source_real  : out std_logic_vector(28 downto 0)                     -- data
+			fftpts_out   : out std_logic_vector(13 downto 0);                    -- data
+			source_imag  : out std_logic_vector(25 downto 0);                    -- data
+			source_real  : out std_logic_vector(25 downto 0)                     -- data
 		);
 	end component FM_FFT_FM_FFT;
 
@@ -119,9 +119,9 @@ architecture rtl of FM_FFT is
 	signal rst_controller_reset_out_reset           : std_logic;                     -- rst_controller:reset_out -> rst_controller_reset_out_reset:in
 	signal reset_reset_n_ports_inv                  : std_logic;                     -- reset_reset_n:inv -> rst_controller:reset_in0
 	signal rst_controller_reset_out_reset_ports_inv : std_logic;                     -- rst_controller_reset_out_reset:inv -> FM_FFT:reset_n
-	signal fm_fft_source_imag                       : std_logic_vector(28 downto 0); -- port fragment
-	signal fm_fft_source_real                       : std_logic_vector(28 downto 0); -- port fragment
-	signal fm_fft_fftpts_out                        : std_logic_vector(14 downto 0); -- port fragment
+	signal fm_fft_source_imag                       : std_logic_vector(25 downto 0); -- port fragment
+	signal fm_fft_source_real                       : std_logic_vector(25 downto 0); -- port fragment
+	signal fm_fft_fftpts_out                        : std_logic_vector(13 downto 0); -- port fragment
 
 begin
 
@@ -134,18 +134,18 @@ begin
 			sink_error               => fft_ii_0_sink_error,                      --       .error
 			sink_sop                 => fft_ii_0_sink_startofpacket,              --       .startofpacket
 			sink_eop                 => fft_ii_0_sink_endofpacket,                --       .endofpacket
-			sink_real(13 downto 0)   => fft_ii_0_sink_data(43 downto 30),         --       .data
-			sink_imag(13 downto 0)   => fft_ii_0_sink_data(29 downto 16),         --       .data
-			fftpts_in(14 downto 0)   => fft_ii_0_sink_data(15 downto 1),          --       .data
+			sink_real(13 downto 0)   => fft_ii_0_sink_data(42 downto 29),         --       .data
+			sink_imag(13 downto 0)   => fft_ii_0_sink_data(28 downto 15),         --       .data
+			fftpts_in(13 downto 0)   => fft_ii_0_sink_data(14 downto 1),          --       .data
 			inverse                  => fft_ii_0_sink_data(0),                    --       .data
 			source_valid             => fft_ii_0_source_valid,                    -- source.valid
 			source_ready             => fft_ii_0_source_ready,                    --       .ready
 			source_error             => fft_ii_0_source_error,                    --       .error
 			source_sop               => fft_ii_0_source_startofpacket,            --       .startofpacket
 			source_eop               => fft_ii_0_source_endofpacket,              --       .endofpacket
-			source_real(28 downto 0) => fm_fft_source_real(28 downto 0),          --       .data
-			source_imag(28 downto 0) => fm_fft_source_imag(28 downto 0),          --       .data
-			fftpts_out(14 downto 0)  => fm_fft_fftpts_out(14 downto 0)            --       .data
+			source_real(25 downto 0) => fm_fft_source_real(25 downto 0),          --       .data
+			source_imag(25 downto 0) => fm_fft_source_imag(25 downto 0),          --       .data
+			fftpts_out(13 downto 0)  => fm_fft_fftpts_out(13 downto 0)            --       .data
 		);
 
 	rst_controller : component altera_reset_controller
@@ -217,6 +217,6 @@ begin
 
 	rst_controller_reset_out_reset_ports_inv <= not rst_controller_reset_out_reset;
 
-	fft_ii_0_source_data <= FM_FFT_source_real(28 downto 0) & FM_FFT_source_imag(28 downto 0) & FM_FFT_fftpts_out(14 downto 0);
+	fft_ii_0_source_data <= FM_FFT_source_real(25 downto 0) & FM_FFT_source_imag(25 downto 0) & FM_FFT_fftpts_out(13 downto 0);
 
 end architecture rtl; -- of FM_FFT

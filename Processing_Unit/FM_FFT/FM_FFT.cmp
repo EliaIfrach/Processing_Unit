@@ -6,13 +6,13 @@
 			fft_ii_0_sink_error           : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- error
 			fft_ii_0_sink_startofpacket   : in  std_logic                     := 'X';             -- startofpacket
 			fft_ii_0_sink_endofpacket     : in  std_logic                     := 'X';             -- endofpacket
-			fft_ii_0_sink_data            : in  std_logic_vector(43 downto 0) := (others => 'X'); -- data
+			fft_ii_0_sink_data            : in  std_logic_vector(42 downto 0) := (others => 'X'); -- data
 			fft_ii_0_source_valid         : out std_logic;                                        -- valid
 			fft_ii_0_source_ready         : in  std_logic                     := 'X';             -- ready
 			fft_ii_0_source_error         : out std_logic_vector(1 downto 0);                     -- error
 			fft_ii_0_source_startofpacket : out std_logic;                                        -- startofpacket
 			fft_ii_0_source_endofpacket   : out std_logic;                                        -- endofpacket
-			fft_ii_0_source_data          : out std_logic_vector(72 downto 0);                    -- data
+			fft_ii_0_source_data          : out std_logic_vector(65 downto 0);                    -- data
 			reset_reset_n                 : in  std_logic                     := 'X'              -- reset_n
 		);
 	end component FM_FFT;

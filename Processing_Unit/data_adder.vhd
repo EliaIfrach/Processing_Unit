@@ -8,7 +8,8 @@ entity data_adder is
         rst :in std_logic;
         data_in :in signed(9 downto 0);
         data_150_in :in signed(9 downto 0);
-        out_data :out signed(10 downto 0)
+        out_data :out signed(10 downto 0);
+        SW_150   :in std_logic
     );
 end entity data_adder;
 
@@ -22,7 +23,11 @@ begin
         if(rst='0') then
             out_data <= (others => '0');
         elsif(rising_edge(clk)) then
-            out_data <= (holder + data_150_in)/4;                   
+            if SW_150 = '0' then
+            out_data <= (holder + data_150_in)/4;
+            else
+                out_data <= (holder)/4;
+            end if;             
         end if;
     end process;
 end architecture rtl;

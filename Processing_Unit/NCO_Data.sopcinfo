@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="NCO_Data" kind="NCO_Data" version="1.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2022.08.21.18:34:04 -->
+ <!-- 2022.10.19.13:17:31 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1661096044</value>
+  <value>1666174651</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -158,7 +158,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="apr">
    <type>int</type>
-   <value>13</value>
+   <value>15</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -238,7 +238,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="phi_inc">
    <type>long</type>
-   <value>1</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -246,7 +246,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="real_freq_out">
    <type>double</type>
-   <value>0.006104</value>
+   <value>0.004578</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -452,7 +452,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="dataBitsPerSymbol">
     <type>int</type>
-    <value>13</value>
+    <value>15</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -549,7 +549,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>in_data</name>
     <direction>Input</direction>
-    <width>13</width>
+    <width>15</width>
     <role>data</role>
    </port>
   </interface>

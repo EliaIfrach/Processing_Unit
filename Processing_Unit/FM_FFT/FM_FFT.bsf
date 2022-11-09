@@ -62,8 +62,8 @@ agreement for further details.
 	(port
 		(pt 0 192)
 		(input)
-		(text "fft_ii_0_sink_data[43..0]" (rect 0 0 97 12)(font "Arial" (font_size 8)))
-		(text "fft_ii_0_sink_data[43..0]" (rect 4 181 154 192)(font "Arial" (font_size 8)))
+		(text "fft_ii_0_sink_data[42..0]" (rect 0 0 97 12)(font "Arial" (font_size 8)))
+		(text "fft_ii_0_sink_data[42..0]" (rect 4 181 154 192)(font "Arial" (font_size 8)))
 		(line (pt 0 192)(pt 144 192)(line_width 3))
 	)
 	(port
@@ -118,8 +118,8 @@ agreement for further details.
 	(port
 		(pt 448 152)
 		(output)
-		(text "fft_ii_0_source_data[72..0]" (rect 0 0 108 12)(font "Arial" (font_size 8)))
-		(text "fft_ii_0_source_data[72..0]" (rect 310 141 472 152)(font "Arial" (font_size 8)))
+		(text "fft_ii_0_source_data[65..0]" (rect 0 0 108 12)(font "Arial" (font_size 8)))
+		(text "fft_ii_0_source_data[65..0]" (rect 310 141 472 152)(font "Arial" (font_size 8)))
 		(line (pt 448 152)(pt 288 152)(line_width 3))
 	)
 	(drawing

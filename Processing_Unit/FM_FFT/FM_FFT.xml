@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2022.09.16.12:42:49"
+ date="2022.10.26.11:27:33"
  outputDirectory="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/FM_FFT/">
  <perimeter>
   <parameter
@@ -24,13 +24,13 @@
   <parameter
      name="AUTO_DEVICE"
      type="String"
-     defaultValue="5CEBA4F23C7"
+     defaultValue="5CGXFC5C6F27C7"
      onHdl="0"
      affectsHdl="1" />
   <parameter
      name="AUTO_DEVICE_SPEEDGRADE"
      type="String"
-     defaultValue="7"
+     defaultValue="7_H6"
      onHdl="0"
      affectsHdl="1" />
   <parameter
@@ -61,7 +61,7 @@
    <property name="associatedClock" value="clk" />
    <property name="associatedReset" value="reset" />
    <property name="beatsPerCycle" value="1" />
-   <property name="dataBitsPerSymbol" value="44" />
+   <property name="dataBitsPerSymbol" value="43" />
    <property name="emptyWithinPacket" value="false" />
    <property name="errorDescriptor" value="" />
    <property name="firstSymbolInHighOrderBits" value="true" />
@@ -83,13 +83,13 @@
        direction="input"
        role="endofpacket"
        width="1" />
-   <port name="fft_ii_0_sink_data" direction="input" role="data" width="44" />
+   <port name="fft_ii_0_sink_data" direction="input" role="data" width="43" />
   </interface>
   <interface name="fft_ii_0_source" kind="avalon_streaming" start="1">
    <property name="associatedClock" value="clk" />
    <property name="associatedReset" value="reset" />
    <property name="beatsPerCycle" value="1" />
-   <property name="dataBitsPerSymbol" value="73" />
+   <property name="dataBitsPerSymbol" value="66" />
    <property name="emptyWithinPacket" value="false" />
    <property name="errorDescriptor" value="" />
    <property name="firstSymbolInHighOrderBits" value="true" />
@@ -119,7 +119,7 @@
        direction="output"
        role="endofpacket"
        width="1" />
-   <port name="fft_ii_0_source_data" direction="output" role="data" width="73" />
+   <port name="fft_ii_0_source_data" direction="output" role="data" width="66" />
   </interface>
   <interface name="reset" kind="reset" start="0">
    <property name="associatedClock" value="" />
@@ -129,19 +129,19 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="FM_FFT:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CEBA4F23C7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1663321367,AUTO_UNIQUE_ID=(altera_fft_ii:17.0:CALC_LATENCY=16384,THROUGHPUT_LATENCY=16384,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=QSYS,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=14,in_width_derived=14,length=16384,num_engines=1,num_engines_derived=1,out_order=Digit Reverse,out_width=29,out_width_derived=29,selected_device_family=Cyclone V,twid_width=18,twid_width_derived=18)(clock_source:17.0:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(clock:17.0:)(reset:17.0:)"
+   parameterizationKey="FM_FFT:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CGXFC5C6F27C7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7_H6,AUTO_GENERATION_ID=1666772851,AUTO_UNIQUE_ID=(altera_fft_ii:17.0:CALC_LATENCY=8192,THROUGHPUT_LATENCY=8192,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=QSYS,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=14,in_width_derived=14,length=8192,num_engines=1,num_engines_derived=1,out_order=Digit Reverse,out_width=26,out_width_derived=26,selected_device_family=Cyclone V,twid_width=18,twid_width_derived=18)(clock_source:17.0:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(clock:17.0:)(reset:17.0:)"
    instancePathKey="FM_FFT"
    kind="FM_FFT"
    version="1.0"
    name="FM_FFT">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1663321367" />
-  <parameter name="AUTO_DEVICE" value="5CEBA4F23C7" />
+  <parameter name="AUTO_GENERATION_ID" value="1666772851" />
+  <parameter name="AUTO_DEVICE" value="5CGXFC5C6F27C7" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
   <parameter name="AUTO_UNIQUE_ID" value="" />
-  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7_H6" />
   <generatedFiles>
    <file
        path="C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/FM_FFT/synthesis/FM_FFT.vhd"
@@ -426,30 +426,30 @@
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_fft_ii:17.0:CALC_LATENCY=16384,THROUGHPUT_LATENCY=16384,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=QSYS,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=14,in_width_derived=14,length=16384,num_engines=1,num_engines_derived=1,out_order=Digit Reverse,out_width=29,out_width_derived=29,selected_device_family=Cyclone V,twid_width=18,twid_width_derived=18"
+   parameterizationKey="altera_fft_ii:17.0:CALC_LATENCY=8192,THROUGHPUT_LATENCY=8192,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=QSYS,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=14,in_width_derived=14,length=8192,num_engines=1,num_engines_derived=1,out_order=Digit Reverse,out_width=26,out_width_derived=26,selected_device_family=Cyclone V,twid_width=18,twid_width_derived=18"
    instancePathKey="FM_FFT:.:FM_FFT"
    kind="altera_fft_ii"
    version="17.0"
    name="FM_FFT_FM_FFT">
-  <parameter name="THROUGHPUT_LATENCY" value="16384" />
+  <parameter name="THROUGHPUT_LATENCY" value="8192" />
   <parameter name="in_width_derived" value="14" />
   <parameter name="in_order" value="Natural" />
   <parameter name="hyper_opt" value="false" />
   <parameter name="num_engines_derived" value="1" />
   <parameter name="twid_width_derived" value="18" />
-  <parameter name="length" value="16384" />
+  <parameter name="length" value="8192" />
   <parameter name="out_order" value="Digit Reverse" />
   <parameter name="selected_device_family" value="Cyclone V" />
   <parameter name="dsp_resource_opt" value="false" />
-  <parameter name="CALC_LATENCY" value="16384" />
+  <parameter name="CALC_LATENCY" value="8192" />
   <parameter name="design_env" value="QSYS" />
   <parameter name="data_rep" value="Fixed Point" />
   <parameter name="in_width" value="14" />
   <parameter name="engine_arch" value="Quad Output" />
   <parameter name="data_flow" value="Variable Streaming" />
-  <parameter name="out_width" value="29" />
+  <parameter name="out_width" value="26" />
   <parameter name="num_engines" value="1" />
-  <parameter name="out_width_derived" value="29" />
+  <parameter name="out_width_derived" value="26" />
   <parameter name="hard_fp" value="false" />
   <parameter name="twid_width" value="18" />
   <parameter name="direction" value="Bi-directional" />

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="FM_FFT" kind="FM_FFT" version="1.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2022.09.16.12:42:47 -->
+ <!-- 2022.10.26.11:27:31 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1663321367</value>
+  <value>1666772851</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -32,7 +32,7 @@
  </parameter>
  <parameter name="AUTO_DEVICE">
   <type>java.lang.String</type>
-  <value>5CEBA4F23C7</value>
+  <value>5CGXFC5C6F27C7</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -41,7 +41,7 @@
  </parameter>
  <parameter name="AUTO_DEVICE_SPEEDGRADE">
   <type>java.lang.String</type>
-  <value>7</value>
+  <value>7_H6</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -109,7 +109,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="length">
    <type>int</type>
-   <value>16384</value>
+   <value>8192</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -157,7 +157,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="out_width">
    <type>int</type>
-   <value>29</value>
+   <value>26</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -165,7 +165,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="out_width_derived">
    <type>int</type>
-   <value>29</value>
+   <value>26</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -253,7 +253,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="CALC_LATENCY">
    <type>int</type>
-   <value>16384</value>
+   <value>8192</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -261,7 +261,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="THROUGHPUT_LATENCY">
    <type>int</type>
-   <value>16384</value>
+   <value>8192</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -412,7 +412,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="dataBitsPerSymbol">
     <type>int</type>
-    <value>44</value>
+    <value>43</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -533,7 +533,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>sink_data</name>
     <direction>Input</direction>
-    <width>44</width>
+    <width>43</width>
     <role>data</role>
    </port>
   </interface>
@@ -567,7 +567,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="dataBitsPerSymbol">
     <type>int</type>
-    <value>73</value>
+    <value>66</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -688,7 +688,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>source_data</name>
     <direction>Output</direction>
-    <width>73</width>
+    <width>66</width>
     <role>data</role>
    </port>
   </interface>

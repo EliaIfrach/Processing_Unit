@@ -21,12 +21,12 @@ module FM_FFT (
 	input	[1:0]	fft_ii_0_sink_error;
 	input		fft_ii_0_sink_startofpacket;
 	input		fft_ii_0_sink_endofpacket;
-	input	[43:0]	fft_ii_0_sink_data;
+	input	[42:0]	fft_ii_0_sink_data;
 	output		fft_ii_0_source_valid;
 	input		fft_ii_0_source_ready;
 	output	[1:0]	fft_ii_0_source_error;
 	output		fft_ii_0_source_startofpacket;
 	output		fft_ii_0_source_endofpacket;
-	output	[72:0]	fft_ii_0_source_data;
+	output	[65:0]	fft_ii_0_source_data;
 	input		reset_reset_n;
 endmodule

@@ -41,8 +41,8 @@ agreement for further details.
 	(port
 		(pt 0 128)
 		(input)
-		(text "nco_data_in_data[12..0]" (rect 0 0 94 12)(font "Arial" (font_size 8)))
-		(text "nco_data_in_data[12..0]" (rect 4 117 142 128)(font "Arial" (font_size 8)))
+		(text "nco_data_in_data[14..0]" (rect 0 0 95 12)(font "Arial" (font_size 8)))
+		(text "nco_data_in_data[14..0]" (rect 4 117 142 128)(font "Arial" (font_size 8)))
 		(line (pt 0 128)(pt 128 128)(line_width 3))
 	)
 	(port

@@ -8,6 +8,6 @@ preplace netloc POINT_TO_POINT<net_container>NCO_Data</net_container>(SLAVE)NCO_
 preplace netloc POINT_TO_POINT<net_container>NCO_Data</net_container>(MASTER)clk_0.clk_reset,(SLAVE)NCO_Data.rst) 1 1 1 330
 preplace netloc EXPORT<net_container>NCO_Data</net_container>(SLAVE)NCO_Data.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
 preplace netloc EXPORT<net_container>NCO_Data</net_container>(SLAVE)clk_0.clk_in,(SLAVE)NCO_Data.clk) 1 0 1 NJ
-preplace netloc EXPORT<net_container>NCO_Data</net_container>(SLAVE)NCO_Data.nco_data_in,(SLAVE)NCO_Data.in) 1 0 2 NJ 140 NJ
+preplace netloc EXPORT<net_container>NCO_Data</net_container>(SLAVE)NCO_Data.in,(SLAVE)NCO_Data.nco_data_in) 1 0 2 NJ 140 NJ
 levelinfo -pg 1 0 80 560
 levelinfo -hier NCO_Data 90 120 360 450

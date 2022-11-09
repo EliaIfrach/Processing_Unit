@@ -1,6 +1,6 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_Data.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_Data" --family="Cyclone V" --part=5CEBA4F23C7
-Progress: Loading FM/NCO_Data.qsys
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\NCO_Data.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\NCO_Data" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading Processing_Unit/NCO_Data.qsys
 Progress: Reading input file
 Progress: Adding NCO_Data [altera_nco_ii 17.0]
 Progress: Parameterizing module NCO_Data
@@ -14,8 +14,8 @@ Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_Data.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\FM\NCO_Data\synthesis" --family="Cyclone V" --part=5CEBA4F23C7
-Progress: Loading FM/NCO_Data.qsys
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\NCO_Data.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\NCO_Data\synthesis" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading Processing_Unit/NCO_Data.qsys
 Progress: Reading input file
 Progress: Adding NCO_Data [altera_nco_ii 17.0]
 Progress: Parameterizing module NCO_Data

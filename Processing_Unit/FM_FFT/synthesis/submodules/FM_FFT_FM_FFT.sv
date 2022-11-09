@@ -15,7 +15,7 @@
 module FM_FFT_FM_FFT (
    input clk, 
    input reset_n,
-	input [14 : 0] fftpts_in,
+	input [13 : 0] fftpts_in,
 	input	[0 : 0] inverse,
 	input	sink_valid,
 	input	sink_sop,
@@ -24,30 +24,30 @@ module FM_FFT_FM_FFT (
 	input	logic [13 : 0] sink_imag,
 	input	logic [1 : 0] sink_error,
 	input	source_ready,
-   output [14 : 0] fftpts_out,
+   output [13 : 0] fftpts_out,
 	output sink_ready,
 	output [1 : 0] source_error,
 	output source_sop,
 	output source_eop,
 	output source_valid,
-	output [28 : 0] source_real,
-	output [28 : 0] source_imag
+	output [25 : 0] source_real,
+	output [25 : 0] source_imag
 	);
 
 	auk_dspip_r22sdf_top #(
 		.DEVICE_FAMILY_g("Cyclone V"),
-		.MAX_FFTPTS_g(16384),
+		.MAX_FFTPTS_g(8192),
 		.NUM_STAGES_g(7),
 		.DATAWIDTH_g(14),
 		.TWIDWIDTH_g(18),
-		.MAX_GROW_g (15),
+		.MAX_GROW_g (12),
 		.TWIDROM_BASE_g("FM_FFT_FM_FFT_"),
 		.DSP_ROUNDING_g(0),
 		.INPUT_FORMAT_g("NATURAL_ORDER"),
 		.OUTPUT_FORMAT_g("BIT_REVERSED"),
 		.REPRESENTATION_g("FIXEDPT"),
 		.DSP_ARCH_g(2),
-        .PRUNE_g("0,0,0,0,0,0,0") 
+        .PRUNE_g("1,0,0,0,0,0,0") 
 	)
 	auk_dspip_r22sdf_top_inst (
 		.clk(clk),

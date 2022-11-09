@@ -9,7 +9,7 @@ entity FFT_Adapter is
 		clk 			:in std_logic ;
 		rst 		 	:in std_logic ;
 		sink_real		:in std_logic_vector (13 downto 0);
-		data			:out std_logic_vector (43 downto 0);
+		data			:out std_logic_vector (42 downto 0);
 		sink_valid 	 	:out std_logic ;
 		source_ready	:out std_logic ;
 		sink_sop		:out std_logic ;
@@ -19,7 +19,7 @@ entity FFT_Adapter is
 end entity;
 
 architecture fft_time of FFT_Adapter is
-	signal count :integer range 0 to 16383 :=0;
+	signal count :integer range 0 to 8191 :=0;
 	signal image_sig	:std_logic_vector (13 downto 0); 
 	signal flag :std_logic;
 begin
@@ -31,7 +31,7 @@ begin
 				count <= 0;
 				--
 				flag <= '0';
-				data <= "00000000000000000000000000000000000000000000";
+				data <= (others => '0');
 			elsif(rising_edge(clk)) then
 			if(valid_in ='1' or flag = '1') then
 				flag <= '1';
@@ -44,13 +44,13 @@ begin
 				elsif(count = 1) then
 					sink_sop <= '0';
 		
-				elsif(count = 16383) then 
+				elsif(count = 8191) then 
 					sink_eop<='1';
 
 				end if;
 			end if;
 				count <= count + 1;
-				data <= sink_real & image_sig & "1000000000000000";
+				data <= sink_real & image_sig & "100000000000000";
 end if;
 end process;
 	

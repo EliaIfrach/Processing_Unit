@@ -59,7 +59,7 @@
    dir="start" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <module name="NCO_Data" kind="altera_nco_ii" version="17.0" enabled="1">
-  <parameter name="apr" value="13" />
+  <parameter name="apr" value="15" />
   <parameter name="aprf" value="32" />
   <parameter name="apri" value="10" />
   <parameter name="aprp" value="16" />

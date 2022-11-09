@@ -23,7 +23,7 @@
 module NCO_Data_NCO_Data(clk, reset_n, clken, phi_inc_i, fsin_o, out_valid);
 
 parameter mpr = 10;
-parameter apr = 13;
+parameter apr = 15;
 parameter apri= 10;
 parameter aprf= 32;
 parameter aprp= 16;
@@ -237,7 +237,7 @@ asj_dxx ux002(.clk(clk),
 defparam ux002.aprid = aprid;
 defparam ux002.dpri = dpri;
 
-asj_nco_aprid_dxx ux0219(.pcc_w(phi_acc_w),
+asj_nco_apr_dxx ux0219(.pcc_w(phi_acc_w),
                          .pcc_d(phi_acc_w_di)
                          );
 defparam ux0219.apr = apr;

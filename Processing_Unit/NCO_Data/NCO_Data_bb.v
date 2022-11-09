@@ -9,7 +9,7 @@ module NCO_Data (
 
 	input		clk_clk;
 	input		nco_data_in_valid;
-	input	[12:0]	nco_data_in_data;
+	input	[14:0]	nco_data_in_data;
 	output	[9:0]	nco_data_out_data;
 	output		nco_data_out_valid;
 	input		reset_reset_n;
