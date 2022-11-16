@@ -4,15 +4,31 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "rst",
+					"name" : "AD_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "AD_SDIO",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_CLK_A_N",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_CLK_A_P",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "sw",
 					"strict" : false
 				}
 			]
