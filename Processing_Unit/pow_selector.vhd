@@ -22,7 +22,7 @@ architecture rtl of pow_selector is
     signal pow_holder :std_logic_vector(51 downto 0);
     signal index_holder :std_logic_vector(12 downto 0);
 begin
-    inc_test <= "000110011001101";
+    inc_test <= "000010100011111";
     testval <= "000001111101000";
     process(clk,rst)
     begin
