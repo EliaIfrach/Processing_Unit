@@ -5,6 +5,21 @@
         <assignment_value text="QSYS_NAME FM_FFT HAS_SOPCINFO 1 GENERATION_ID 1666772851"/>
       </assignment_values>
     </sld_info>
+    <sld_info hpath="NCO_150:inst1" name="inst1">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME NCO_150 HAS_SOPCINFO 1 GENERATION_ID 1661086791"/>
+      </assignment_values>
+    </sld_info>
+    <sld_info hpath="NCO_Data:inst12" name="inst12">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME NCO_Data HAS_SOPCINFO 1 GENERATION_ID 1666174651"/>
+      </assignment_values>
+    </sld_info>
+    <sld_info hpath="NCO_FM:inst" name="inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME NCO_FM HAS_SOPCINFO 1 GENERATION_ID 1671533839"/>
+      </assignment_values>
+    </sld_info>
     <sld_info hpath="NCO_IQ:inst2" name="inst2">
       <assignment_values>
         <assignment_value text="QSYS_NAME NCO_IQ HAS_SOPCINFO 1 GENERATION_ID 1658066444"/>

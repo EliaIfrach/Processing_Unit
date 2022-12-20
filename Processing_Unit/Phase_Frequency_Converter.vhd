@@ -25,14 +25,17 @@ signal stage_1  :integer;
 signal count 	:integer range 0 to 7;
 signal flag_pn 	:std_logic;
 signal flag_np 	:std_logic;
-signal spike :std_logic;
-signal holder :std_logic_vector (16 downto 0);
-
+signal spike    :std_logic;
+signal holder   :std_logic_vector (16 downto 0);
+signal val_no_fixedpoint :signed (16 downto 0);
 begin
+
 	
 	process(fifo_clk,rst)
 	begin
 		o_read_fifo <= '1';	
+		val_no_fixedpoint <= shift_right(signed(i_angle),8);
+
 	if(rst = '0') then
 		stage_1 <= 0;
 		o_omega <= (others => '0');
@@ -73,34 +76,34 @@ begin
 		elsif(count = 7) then
 			count <= count + 1;
 			o_valid <= '1';
-			stage_1 <= to_integer(signed(i_angle));
+			stage_1 <= to_integer(val_no_fixedpoint);
 		
 			-----------------------------------------
 				if(flag_pn = '1') then 
-					o_omega <= std_logic_vector(to_signed((92160 + to_integer(signed(i_angle)) - stage_1),17));
-					holder <= std_logic_vector(to_signed((92160 + to_integer(signed(i_angle)) - stage_1),17));
+					o_omega <= std_logic_vector(to_signed((92160 + to_integer(val_no_fixedpoint) - stage_1),17));
+					holder <= std_logic_vector(to_signed((92160 + to_integer(val_no_fixedpoint) - stage_1),17));
 					flag_pn <= '0';
 				end if;
 				if(flag_np = '1') then 
-					o_omega <= std_logic_vector(to_signed(((to_integer(signed(i_angle)) - 92160) - stage_1),17));
-					holder <= std_logic_vector(to_signed(((to_integer(signed(i_angle)) - 92160) - stage_1),17));
+					o_omega <= std_logic_vector(to_signed(((to_integer(val_no_fixedpoint) - 92160) - stage_1),17));
+					holder <= std_logic_vector(to_signed(((to_integer(val_no_fixedpoint) - 92160) - stage_1),17));
 					flag_np <= '0';
 				end if;
 				if(flag_np = '0' AND flag_pn = '0') then
-					o_omega <= std_logic_vector(to_signed((to_integer(signed(i_angle)) - stage_1),17));
-					holder <= std_logic_vector(to_signed((to_integer(signed(i_angle)) - stage_1),17));
+					o_omega <= std_logic_vector(to_signed((to_integer(val_no_fixedpoint) - stage_1),17));
+					holder <= std_logic_vector(to_signed((to_integer(val_no_fixedpoint) - stage_1),17));
 					flag_np <= '0';
 					flag_pn <= '0';
 				end if;
 				-----------------------------------------
 				if(fixed_spike_pn = '1' AND flag_np = '0' AND flag_pn = '0') then
-					o_omega <= std_logic_vector(to_signed((92160 + to_integer(signed(i_angle)) - stage_1),17));
-					holder <= std_logic_vector(to_signed((92160 + to_integer(signed(i_angle)) - stage_1),17));
+					o_omega <= std_logic_vector(to_signed((92160 + to_integer(val_no_fixedpoint) - stage_1),17));
+					holder <= std_logic_vector(to_signed((92160 + to_integer(val_no_fixedpoint) - stage_1),17));
 					flag_pn <= '0';
 				end if;
 				if(fixed_spike_np = '1' AND flag_np = '0' AND flag_pn = '0') then
-					o_omega <= std_logic_vector(to_signed(((to_integer(signed(i_angle)) - 92160) - stage_1),17));
-					holder <= std_logic_vector(to_signed(((to_integer(signed(i_angle)) - 92160) - stage_1),17));
+					o_omega <= std_logic_vector(to_signed(((to_integer(val_no_fixedpoint) - 92160) - stage_1),17));
+					holder <= std_logic_vector(to_signed(((to_integer(val_no_fixedpoint) - 92160) - stage_1),17));
 					flag_pn <= '0';
 				end if;
 

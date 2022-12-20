@@ -24,9 +24,9 @@ begin
             out_data <= (others => '0');
         elsif(rising_edge(clk)) then
             if SW_150 = '0' then
-            out_data <= (holder + data_150_in)/4;
+            out_data <= (holder + data_150_in);
             else
-                out_data <= (holder)/4;
+                out_data <= (holder);
             end if;             
         end if;
     end process;

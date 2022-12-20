@@ -45,7 +45,7 @@ begin
 				count <= 0;
 				sum <= 0;
 				holder <= 0;
-			if (holder > 10000 AND holder < 50000) then
+			if (holder > 7000 AND holder < 30000) then
 					flag_150 <= '1';
 			else
 					flag_150 <= '0';

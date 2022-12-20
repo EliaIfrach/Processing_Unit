@@ -1669,7 +1669,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 3040 896 3240 1008)
+	(rect 3064 904 3264 1016)
 	(text "avg_inc" (rect 5 0 43 12)(font "Arial" ))
 	(text "inst39" (rect 8 96 37 108)(font "Arial" ))
 	(port
@@ -3177,16 +3177,6 @@ agreement for further details.
 	(pt 248 880)
 )
 (connector
-	(text "clk" (rect 3026 912 3040 929)(font "Intel Clear" ))
-	(pt 3040 928)
-	(pt 3016 928)
-)
-(connector
-	(text "rst" (rect 3034 928 3045 945)(font "Intel Clear" ))
-	(pt 3040 944)
-	(pt 3024 944)
-)
-(connector
 	(pt 3320 832)
 	(pt 3256 832)
 	(bus)
@@ -3200,6 +3190,16 @@ agreement for further details.
 	(pt 3256 792)
 	(pt 3256 832)
 	(bus)
+)
+(connector
+	(text "clk" (rect 3050 920 3064 937)(font "Intel Clear" ))
+	(pt 3064 936)
+	(pt 3040 936)
+)
+(connector
+	(text "rst" (rect 3058 936 3069 953)(font "Intel Clear" ))
+	(pt 3064 952)
+	(pt 3048 952)
 )
 (text "I & Q Waves" (rect 3432 680 3502 699)(font "Intel Clear" (font_size 8)))
 (text "FM * I   FM * Q" (rect 3864 704 3946 723)(font "Intel Clear" (font_size 8)))

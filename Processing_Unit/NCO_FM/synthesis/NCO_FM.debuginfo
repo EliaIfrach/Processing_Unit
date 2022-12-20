@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="NCO_FM" kind="system" version="17.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2022.08.24.14:29:22 -->
+ <!-- 2022.12.20.12:57:22 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -13,7 +13,7 @@
  </parameter>
  <parameter name="device">
   <type>java.lang.String</type>
-  <value>5CEBA4F23C7</value>
+  <value>5CGXFC5C6F27C7</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -29,7 +29,7 @@
  </parameter>
  <parameter name="deviceSpeedGrade">
   <type>java.lang.String</type>
-  <value>7</value>
+  <value>7_H6</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1661340559</value>
+  <value>1671533839</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -282,7 +282,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="freq_out">
    <type>double</type>
-   <value>1.0</value>
+   <value>5.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -290,7 +290,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="phi_inc">
    <type>long</type>
-   <value>20972</value>
+   <value>104858</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -298,7 +298,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="real_freq_out">
    <type>double</type>
-   <value>1.0</value>
+   <value>5.0</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1651,5 +1651,5 @@ parameters are a RESULT of the module parameters. -->
   <version>17.0</version>
  </plugin>
  <reportVersion>17.0 595</reportVersion>
- <uniqueIdentifier>FC017C3351C700000182CF9D2EBF</uniqueIdentifier>
+ <uniqueIdentifier>FC017C3351C7000001852F2E4A26</uniqueIdentifier>
 </EnsembleReport>

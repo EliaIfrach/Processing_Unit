@@ -3,11 +3,11 @@
 preplace inst NCO_FM.NCO_FM -pg 1 -lvl 2 -y 30
 preplace inst NCO_FM.clk_0 -pg 1 -lvl 1 -y 70
 preplace inst NCO_FM -pg 1 -lvl 1 -y 40 -regy -20
-preplace netloc EXPORT<net_container>NCO_FM</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)NCO_FM.reset) 1 0 1 NJ
-preplace netloc EXPORT<net_container>NCO_FM</net_container>(SLAVE)NCO_FM.in,(SLAVE)NCO_FM.nco_fm_in) 1 0 2 NJ 140 NJ
 preplace netloc POINT_TO_POINT<net_container>NCO_FM</net_container>(MASTER)clk_0.clk_reset,(SLAVE)NCO_FM.rst) 1 1 1 320
-preplace netloc POINT_TO_POINT<net_container>NCO_FM</net_container>(MASTER)clk_0.clk,(SLAVE)NCO_FM.clk) 1 1 1 280
-preplace netloc EXPORT<net_container>NCO_FM</net_container>(SLAVE)NCO_FM.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
-preplace netloc EXPORT<net_container>NCO_FM</net_container>(MASTER)NCO_FM.out,(MASTER)NCO_FM.nco_fm_out) 1 2 1 N
+preplace netloc POINT_TO_POINT<net_container>NCO_FM</net_container>(SLAVE)NCO_FM.clk,(MASTER)clk_0.clk) 1 1 1 280
+preplace netloc EXPORT<net_container>NCO_FM</net_container>(SLAVE)NCO_FM.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>NCO_FM</net_container>(SLAVE)NCO_FM.nco_fm_in,(SLAVE)NCO_FM.in) 1 0 2 NJ 140 NJ
+preplace netloc EXPORT<net_container>NCO_FM</net_container>(MASTER)NCO_FM.nco_fm_out,(MASTER)NCO_FM.out) 1 2 1 N
+preplace netloc EXPORT<net_container>NCO_FM</net_container>(SLAVE)clk_0.clk_in,(SLAVE)NCO_FM.clk) 1 0 1 NJ
 levelinfo -pg 1 0 70 540
 levelinfo -hier NCO_FM 80 110 350 440

@@ -13,20 +13,28 @@ entity FM_Data_Adapter is
 		Y :out std_logic_vector (27 downto 0);
 		X :out std_logic_vector (27 downto 0);
 		nco_FM_data_in :out std_logic_vector(30 downto 0);
-		inc_150 :out std_logic_vector(12 downto 0)
+		inc_150 :out std_logic_vector(12 downto 0);
+		FM_wave_Freq :in std_logic
 	);
 end entity FM_Data_Adapter;
 
 architecture Data of FM_Data_Adapter is
+	signal val_freq :std_logic_vector(19 downto 0);
 begin 
-	data_inc <= "0000000000001";
+
+	val_freq <= ("00011001100110011010") when FM_wave_Freq ='1' else --5Mhz
+				("00001010001111010111"); --2Mhz
+
+	data_inc <= "0000000000011";
 	fm_inc <= "000110011001101";
 	inc_150 <= "0000000001100";
 
 	X <= std_logic_vector(to_signed(1,28));
 	Y <= std_logic_vector(to_signed(134217728,28));
+	
 	process(clk,rst)
 	begin
+		
 		if(rst = '0') then
 			nco_FM_data_in <= (others => '0');
 			elsif(rising_edge(clk)) then
