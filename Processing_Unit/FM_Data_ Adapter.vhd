@@ -38,7 +38,7 @@ begin
 		if(rst = '0') then
 			nco_FM_data_in <= (others => '0');
 			elsif(rising_edge(clk)) then
-			nco_FM_data_in <= ("00011001100110011010") & nco_data_in ;
+			nco_FM_data_in <= (val_freq) & nco_data_in ;
 			
 			end if;
 		end process;

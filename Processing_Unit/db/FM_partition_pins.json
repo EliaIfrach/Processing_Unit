@@ -12,6 +12,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "FM_Waves_SW",
+					"strict" : false
+				},
+				{
 					"name" : "sw",
 					"strict" : false
 				}
