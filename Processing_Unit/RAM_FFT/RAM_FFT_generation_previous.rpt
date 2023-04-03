@@ -1,0 +1,40 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\RAM_FFT.qsys" --block-symbol-file --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\RAM_FFT" --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading Processing_Unit/RAM_FFT.qsys
+Progress: Reading input file
+Progress: Adding Ram_FFT_Data [altera_avalon_onchip_memory2 17.0]
+Progress: Parameterizing module Ram_FFT_Data
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_1 [clock_source 17.0]
+Progress: Parameterizing module clk_1
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\RAM_FFT.qsys" --synthesis=VHDL --output-directory="C:\Users\Elia Yfrach\Desktop\Project\Processing_Unit\RAM_FFT\synthesis" --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading Processing_Unit/RAM_FFT.qsys
+Progress: Reading input file
+Progress: Adding Ram_FFT_Data [altera_avalon_onchip_memory2 17.0]
+Progress: Parameterizing module Ram_FFT_Data
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_1 [clock_source 17.0]
+Progress: Parameterizing module clk_1
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: RAM_FFT: Generating RAM_FFT "RAM_FFT" for QUARTUS_SYNTH
+Info: Ram_FFT_Data: Starting RTL generation for module 'RAM_FFT_Ram_FFT_Data'
+Info: Ram_FFT_Data:   Generation command is [exec C:/intelfpga/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/17.0/quartus/bin64/perl/lib -I C:/intelfpga/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/17.0/quartus/sopc_builder/bin -I C:/intelfpga/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=RAM_FFT_Ram_FFT_Data --dir=C:/Users/ELIAYF~1/AppData/Local/Temp/alt9389_8493309916572422722.dir/0003_Ram_FFT_Data_gen/ --quartus_dir=C:/intelfpga/17.0/quartus --verilog --config=C:/Users/ELIAYF~1/AppData/Local/Temp/alt9389_8493309916572422722.dir/0003_Ram_FFT_Data_gen//RAM_FFT_Ram_FFT_Data_component_configuration.pl  --do_build_sim=0  ]
+Info: Ram_FFT_Data: Done RTL generation for module 'RAM_FFT_Ram_FFT_Data'
+Info: Ram_FFT_Data: "RAM_FFT" instantiated altera_avalon_onchip_memory2 "Ram_FFT_Data"
+Info: rst_controller: "RAM_FFT" instantiated altera_reset_controller "rst_controller"
+Info: RAM_FFT: Done "RAM_FFT" with 3 modules, 6 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

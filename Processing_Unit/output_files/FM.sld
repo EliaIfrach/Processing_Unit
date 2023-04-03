@@ -1,33 +1,8 @@
 <sld_project_info>
   <sld_infos>
-    <sld_info hpath="FM_FFT:inst34" name="inst34">
+    <sld_info hpath="RAM_FFT:inst44" name="inst44">
       <assignment_values>
-        <assignment_value text="QSYS_NAME FM_FFT HAS_SOPCINFO 1 GENERATION_ID 1666772851"/>
-      </assignment_values>
-    </sld_info>
-    <sld_info hpath="NCO_150:inst1" name="inst1">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME NCO_150 HAS_SOPCINFO 1 GENERATION_ID 1661086791"/>
-      </assignment_values>
-    </sld_info>
-    <sld_info hpath="NCO_Data:inst12" name="inst12">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME NCO_Data HAS_SOPCINFO 1 GENERATION_ID 1666174651"/>
-      </assignment_values>
-    </sld_info>
-    <sld_info hpath="NCO_FM:inst" name="inst">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME NCO_FM HAS_SOPCINFO 1 GENERATION_ID 1671533839"/>
-      </assignment_values>
-    </sld_info>
-    <sld_info hpath="NCO_IQ:inst2" name="inst2">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME NCO_IQ HAS_SOPCINFO 1 GENERATION_ID 1658066444"/>
-      </assignment_values>
-    </sld_info>
-    <sld_info hpath="PLL:inst6" name="inst6">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME PLL HAS_SOPCINFO 1 GENERATION_ID 1670414473"/>
+        <assignment_value text="QSYS_NAME RAM_FFT HAS_SOPCINFO 1 GENERATION_ID 1680530398"/>
       </assignment_values>
     </sld_info>
     <sld_info hpath="fifo_decimation:inst11" name="inst11">

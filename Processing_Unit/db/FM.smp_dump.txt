@@ -1,7 +1,21 @@
 
-State Machine - |Project_BDF|Phase_Frequency_v2:inst10|state
-Name state.D state.C state.B state.A 
-state.A 0 0 0 0 
-state.B 0 0 1 1 
-state.C 0 1 0 1 
-state.D 1 0 0 1 
+State Machine - |BDF_V2|UART_Reciver:inst54|state
+Name state.RX_Stop_Bit state.RX_Data_Bits state.RX_Start_Bit state.Idle 
+state.Idle 0 0 0 0 
+state.RX_Start_Bit 0 0 1 1 
+state.RX_Data_Bits 0 1 0 1 
+state.RX_Stop_Bit 1 0 0 1 
+
+State Machine - |BDF_V2|Data_Mux:inst56|state
+Name state.transmit state.save_data state.idle state.rst 
+state.rst 0 0 0 0 
+state.idle 0 0 1 1 
+state.save_data 0 1 0 1 
+state.transmit 1 0 0 1 
+
+State Machine - |BDF_V2|UART_Transmitter:inst53|state
+Name state.TX_STOP_BIT state.TX_DATA_BITS state.TX_START_BIT state.IDLE 
+state.IDLE 0 0 0 0 
+state.TX_START_BIT 0 0 1 1 
+state.TX_DATA_BITS 0 1 0 1 
+state.TX_STOP_BIT 1 0 0 1 

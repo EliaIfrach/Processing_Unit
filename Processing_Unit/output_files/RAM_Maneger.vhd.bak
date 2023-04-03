@@ -1,0 +1,52 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
+entity RAM_Maneger is
+    port (
+        clk             : in    std_logic;
+        rst             : in    std_logic;
+        i_index         : in    std_logic_vector(12 downto 0);
+        i_pow_data      : in    std_logic_vector(51 downto 0);
+        i_Save_Data     : in    std_logic;
+        i_SOP           : in    std_logic;
+        o_pow_data      : out   unsigned(31 downto 0);
+        o_adress        : out   unsigned(10 downto 0);
+        o_Done_Data     : out   std_logic;
+        o_write         : out   std_logic
+    );
+end entity RAM_Maneger;
+
+
+
+architecture arch_RAM_Maneger of RAM_Maneger is
+    signal count      : integer range 0 to 8192;
+    signal r_send_data  : std_logic;
+begin
+    process(clk,rst)
+    begin
+        if rst = '0' then
+            count <= 0;
+            r_send_data <= '0';
+        elsif rising_edge(clk) then
+            if i_SOP = '1' AND i_Save_Data = '1' then
+                r_send_data <= '1';
+            end if;
+                if r_send_data = '1' then
+                    if(count < 2048) then
+                        o_adress <= resize(unsigned(i_index),11);
+                        o_pow_data <= resize(shift_right(unsigned(i_pow_data),20),32);
+                        o_write <= '1';
+                        count <= count + 1;
+                        o_Done_Data <= '0';
+                    else
+                        o_Done_Data <= '1';
+                        r_send_data <= '0';
+                        count <= 0;
+                        o_write <= '0';
+                    end if;
+                end if;
+        end if;
+    end process;
+
+end architecture ;

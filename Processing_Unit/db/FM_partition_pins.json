@@ -4,11 +4,19 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "rst",
+					"name" : "TX",
+					"strict" : false
+				},
+				{
+					"name" : "RX",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
 					"strict" : false
 				},
 				{
