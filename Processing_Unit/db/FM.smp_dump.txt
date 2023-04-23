@@ -6,12 +6,13 @@ state.RX_Start_Bit 0 0 1 1
 state.RX_Data_Bits 0 1 0 1 
 state.RX_Stop_Bit 1 0 0 1 
 
-State Machine - |BDF_V2|Data_Mux:inst56|state
-Name state.transmit state.save_data state.idle state.rst 
-state.rst 0 0 0 0 
-state.idle 0 0 1 1 
-state.save_data 0 1 0 1 
-state.transmit 1 0 0 1 
+State Machine - |BDF_V2|Data_Mux_Component:inst68|state
+Name state.s_transmit state.s_save state.s_index state.s_idle state.s_rst 
+state.s_rst 0 0 0 0 0 
+state.s_idle 0 0 0 1 1 
+state.s_index 0 0 1 0 1 
+state.s_save 0 1 0 0 1 
+state.s_transmit 1 0 0 0 1 
 
 State Machine - |BDF_V2|UART_Transmitter:inst53|state
 Name state.TX_STOP_BIT state.TX_DATA_BITS state.TX_START_BIT state.IDLE 

@@ -17,11 +17,15 @@ entity Data_Mux is
 end entity Data_Mux;
 
 architecture rtl_Data_Mux of Data_Mux is
-    signal r_data     : std_logic_vector(31 downto 0);
-    signal r_count    : integer range 0 to 3;
-    signal r_index    : integer range 0 to 2047;
-    signal r_flag     : std_logic;
-    signal flag     : std_logic;
+    signal r_data       : std_logic_vector(31 downto 0);
+    signal r_count      : integer range 0 to 4;
+    signal r_index      : integer range 0 to 2047;
+    signal r_flag_1       : std_logic;
+    signal r_symbol_cnt : integer range 0 to 15; -- Counts dats symbols that have sent
+    signal r_first_symbol : std_logic;
+    signal r_flag_2     : std_logic;
+    signal r_end_symbol : std_logic;
+    signal r_flag_3   : std_logic;
 
     type t_State is (rst, idle, save_data, transmit);
     signal state : t_State;
@@ -44,29 +48,60 @@ process(i_clk, i_rst)
 
                 when idle =>
                     o_TX_DV <= '0'; --?????
-                    if (i_RX_Data = "00000001" OR r_flag = '1') then
-                        r_flag <= '1';
+                    if (i_RX_Data = "00000001" OR r_flag_1 = '1') then
+                        r_flag_1 <= '1';
                         o_index <= std_logic_vector(to_unsigned(r_index, 11)); --Adress to ram
                         state <= save_data;
                     else
                         state <= idle;
                     end if;
 
-                    if (r_index = 127) then --sends the first 128 bytes          
-                        o_save_data <= '1';
-                        r_flag <= '0';
-                        r_index <= 0;     
-                    else                              
-                        o_save_data <= '0';           
-                    end if;                 
+                    if ((i_RX_Data = "00000010" AND r_first_symbol = '1') OR r_flag_2 = '1') then
+                        r_flag_2 <= '1';
+                        r_first_symbol <= '0';
+                        o_index <= std_logic_vector(to_unsigned(r_index, 11)); --Adress to ram
+                        state <= save_data;
 
+                    else
+                        state <= idle;
+                    end if;
+
+                    if ((i_RX_Data = "00000011" AND r_end_symbol = '1') OR r_flag_3 = '1') then
+                        r_flag_3 <= '1';
+                        r_first_symbol <= '0';
+                        o_index <= std_logic_vector(to_unsigned(r_index, 11)); --Adress to ram
+                        state <= save_data;
+                    else
+                        state <= idle;
+                    end if;                    
+
+                    if (r_index = 127) then --sends the first 128 bytes          
+                        r_first_symbol <= '1';
+                        r_flag_1 <= '0';
+                        --r_index <= 0;     
+                        --o_save_data <= '1';
+                    end if;
+
+                    if (r_index = 1920) then --sends the mid 1792 bytes          
+                        r_flag_2 <= '0';
+                        r_end_symbol <= '1';
+                        --r_index <= 0;     
+                        --o_save_data <= '1';
+                    end if;
+
+                    if (r_index = 2047) then --sends the last 128 bytes          
+                        r_flag_3 <= '0';
+                        r_end_symbol <= '0';
+                        --r_index <= 0;     
+                        --o_save_data <= '1';
+                    end if;
                 when save_data =>
                     r_data <= i_data;
                     state <= transmit;
                     
                     
                 when transmit =>
-                    if(r_count < 3) then
+                    if(r_count <= 3) then
                         if(i_TX_Active = '0') then
                             o_Uart_Data <= r_data(8*(r_count+1)-1 downto r_count * 8);  --FROM LSB to MSB - 8 bits
                             --o_Uart_Data <= r_data((32-r_count*8)-1 downto 24-(8*r_count)); --FROM MSB to LSB
@@ -75,7 +110,7 @@ process(i_clk, i_rst)
                         else 
                             o_TX_DV <= '0';
                         end if;
-                    else
+                    elsif (r_count = 4) then
                         if(i_TX_Active = '0') then
                             o_Uart_Data <= r_data(8*(r_count+1)-1 downto r_count * 8);  --FROM LSB to MSB - 8 bits
                             --o_Uart_Data <= r_data((32-r_count*8)-1 downto 24-(8*r_count)); --FROM MSB to LSB
