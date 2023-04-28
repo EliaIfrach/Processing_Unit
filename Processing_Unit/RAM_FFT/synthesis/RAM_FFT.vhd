@@ -8,8 +8,8 @@ use IEEE.numeric_std.all;
 
 entity RAM_FFT is
 	port (
+		clk_115200khz_clk              : in  std_logic                     := '0';             --       clk_115200khz.clk
 		clk_50mhz_clk                  : in  std_logic                     := '0';             --           clk_50mhz.clk
-		clk_9600hz_clk                 : in  std_logic                     := '0';             --          clk_9600hz.clk
 		onchip_memory2_0_s1_address    : in  std_logic_vector(10 downto 0) := (others => '0'); -- onchip_memory2_0_s1.address
 		onchip_memory2_0_s1_clken      : in  std_logic                     := '0';             --                    .clken
 		onchip_memory2_0_s1_chipselect : in  std_logic                     := '0';             --                    .chipselect
@@ -148,7 +148,7 @@ begin
 			readdata2   => onchip_memory2_0_s2_readdata,           --       .readdata
 			writedata2  => onchip_memory2_0_s2_writedata,          --       .writedata
 			byteenable2 => onchip_memory2_0_s2_byteenable,         --       .byteenable
-			clk2        => clk_9600hz_clk,                         --   clk2.clk
+			clk2        => clk_115200khz_clk,                      --   clk2.clk
 			reset2      => rst_controller_001_reset_out_reset,     -- reset2.reset
 			reset_req2  => rst_controller_001_reset_out_reset_req, --       .reset_req
 			freeze      => '0'                                     -- (terminated)
@@ -248,7 +248,7 @@ begin
 		)
 		port map (
 			reset_in0      => reset_reset_n_ports_inv,                -- reset_in0.reset
-			clk            => clk_9600hz_clk,                         --       clk.clk
+			clk            => clk_115200khz_clk,                      --       clk.clk
 			reset_out      => rst_controller_001_reset_out_reset,     -- reset_out.reset
 			reset_req      => rst_controller_001_reset_out_reset_req, --          .reset_req
 			reset_req_in0  => '0',                                    -- (terminated)

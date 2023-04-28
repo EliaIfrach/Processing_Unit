@@ -4,8 +4,8 @@
 
 `timescale 1 ps / 1 ps
 module RAM_FFT (
+		input  wire        clk_115200khz_clk,              //       clk_115200khz.clk
 		input  wire        clk_50mhz_clk,                  //           clk_50mhz.clk
-		input  wire        clk_9600hz_clk,                 //          clk_9600hz.clk
 		input  wire [10:0] onchip_memory2_0_s1_address,    // onchip_memory2_0_s1.address
 		input  wire        onchip_memory2_0_s1_clken,      //                    .clken
 		input  wire        onchip_memory2_0_s1_chipselect, //                    .chipselect
@@ -46,7 +46,7 @@ module RAM_FFT (
 		.readdata2   (onchip_memory2_0_s2_readdata),           //       .readdata
 		.writedata2  (onchip_memory2_0_s2_writedata),          //       .writedata
 		.byteenable2 (onchip_memory2_0_s2_byteenable),         //       .byteenable
-		.clk2        (clk_9600hz_clk),                         //   clk2.clk
+		.clk2        (clk_115200khz_clk),                      //   clk2.clk
 		.reset2      (rst_controller_001_reset_out_reset),     // reset2.reset
 		.reset_req2  (rst_controller_001_reset_out_reset_req), //       .reset_req
 		.freeze      (1'b0)                                    // (terminated)
@@ -142,7 +142,7 @@ module RAM_FFT (
 		.ADAPT_RESET_REQUEST       (0)
 	) rst_controller_001 (
 		.reset_in0      (~reset_reset_n),                         // reset_in0.reset
-		.clk            (clk_9600hz_clk),                         //       clk.clk
+		.clk            (clk_115200khz_clk),                      //       clk.clk
 		.reset_out      (rst_controller_001_reset_out_reset),     // reset_out.reset
 		.reset_req      (rst_controller_001_reset_out_reset_req), //          .reset_req
 		.reset_req_in0  (1'b0),                                   // (terminated)

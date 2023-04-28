@@ -1,0 +1,54 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Elia Yfrach/Desktop/Project
+Edata_mux_component_v2
+Z1 w1682609397
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 9
+R0
+Z5 8C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/Data_Mux_Component_v2.vhd
+Z6 FC:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/Data_Mux_Component_v2.vhd
+l0
+L5 1
+V=oK0@Zn0OP0z@=PE;MDhD0
+!s100 4JzW1R>BX2U0ajnI>?icB2
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1682609401
+!i10b 1
+Z9 !s108 1682609401.000000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/Data_Mux_Component_v2.vhd|
+Z11 !s107 C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/Data_Mux_Component_v2.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+DEx4 work 21 data_mux_component_v2 0 22 =oK0@Zn0OP0z@=PE;MDhD0
+!i122 9
+l29
+L20 91
+VKZ<EJ_fCPTXlJ@YW=dg];2
+!s100 16NiTFfFB[mYDjEGz1B<80
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

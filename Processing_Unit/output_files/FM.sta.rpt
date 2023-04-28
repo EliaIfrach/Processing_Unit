@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for FM
-Sun Apr 23 16:29:37 2023
+Thu Apr 27 21:58:13 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
@@ -103,14 +103,14 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.29        ;
+; Average used               ; 2.62        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  43.0%      ;
-;     Processor 3            ;  42.9%      ;
-;     Processor 4            ;  42.9%      ;
+;     Processor 2            ;  53.9%      ;
+;     Processor 3            ;  53.9%      ;
+;     Processor 4            ;  53.9%      ;
 +----------------------------+-------------+
 
 
@@ -119,22 +119,22 @@ agreement for further details.
 +-----------------------------------------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                                                             ; Status ; Read at                  ;
 +-----------------------------------------------------------------------------------------------------------+--------+--------------------------+
-; fifo_decimation_4/synthesis/submodules/altera_reset_controller.sdc                                        ; OK     ; Sun Apr 23 16:28:31 2023 ;
-; fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc                            ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; FM_FFT/synthesis/submodules/altera_reset_controller.sdc                                                   ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; FFT/synthesis/submodules/altera_reset_controller.sdc                                                      ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; fifo_decimation_3/synthesis/submodules/altera_reset_controller.sdc                                        ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc                            ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; NCO_TEST/synthesis/submodules/altera_reset_controller.sdc                                                 ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; NCO_150/synthesis/submodules/altera_reset_controller.sdc                                                  ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; fifo_decimation_2/synthesis/submodules/altera_reset_controller.sdc                                        ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc                            ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; fifo_decimation/synthesis/submodules/altera_reset_controller.sdc                                          ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc                                  ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; NCO_IQ/synthesis/submodules/altera_reset_controller.sdc                                                   ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; NCO_Data/synthesis/submodules/altera_reset_controller.sdc                                                 ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; NCO_FM/synthesis/submodules/altera_reset_controller.sdc                                                   ; OK     ; Sun Apr 23 16:28:32 2023 ;
-; c:/users/elia yfrach/desktop/project/processing_unit/db/ip/ram_fft/submodules/altera_reset_controller.sdc ; OK     ; Sun Apr 23 16:28:32 2023 ;
+; fifo_decimation_4/synthesis/submodules/altera_reset_controller.sdc                                        ; OK     ; Thu Apr 27 21:57:22 2023 ;
+; fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc                            ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; FM_FFT/synthesis/submodules/altera_reset_controller.sdc                                                   ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; FFT/synthesis/submodules/altera_reset_controller.sdc                                                      ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; fifo_decimation_3/synthesis/submodules/altera_reset_controller.sdc                                        ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc                            ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; NCO_TEST/synthesis/submodules/altera_reset_controller.sdc                                                 ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; NCO_150/synthesis/submodules/altera_reset_controller.sdc                                                  ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; fifo_decimation_2/synthesis/submodules/altera_reset_controller.sdc                                        ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc                            ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; fifo_decimation/synthesis/submodules/altera_reset_controller.sdc                                          ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc                                  ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; NCO_IQ/synthesis/submodules/altera_reset_controller.sdc                                                   ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; NCO_Data/synthesis/submodules/altera_reset_controller.sdc                                                 ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; NCO_FM/synthesis/submodules/altera_reset_controller.sdc                                                   ; OK     ; Thu Apr 27 21:57:23 2023 ;
+; c:/users/elia yfrach/desktop/project/processing_unit/db/ip/ram_fft/submodules/altera_reset_controller.sdc ; OK     ; Thu Apr 27 21:57:23 2023 ;
 +-----------------------------------------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -152,7 +152,7 @@ agreement for further details.
 +-----------+-----------------+---------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name          ; Note ;
 +-----------+-----------------+---------------------+------+
-; 70.85 MHz ; 70.85 MHz       ; altera_reserved_tck ;      ;
+; 76.27 MHz ; 76.27 MHz       ; altera_reserved_tck ;      ;
 +-----------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -163,13 +163,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
-+---------------------------------------------+
-; Slow 1100mV 85C Model Setup Summary         ;
-+---------------------+-------+---------------+
-; Clock               ; Slack ; End Point TNS ;
-+---------------------+-------+---------------+
-; altera_reserved_tck ; 9.609 ; 0.000         ;
-+---------------------+-------+---------------+
++----------------------------------------------+
+; Slow 1100mV 85C Model Setup Summary          ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 10.111 ; 0.000         ;
++---------------------+--------+---------------+
 
 
 +---------------------------------------------+
@@ -177,7 +177,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.278 ; 0.000         ;
+; altera_reserved_tck ; 0.522 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -186,7 +186,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 29.265 ; 0.000         ;
+; altera_reserved_tck ; 29.736 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -195,7 +195,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.935 ; 0.000         ;
+; altera_reserved_tck ; 0.928 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -204,7 +204,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+--------------------+
 ; Clock               ; Slack  ; End Point TNS      ;
 +---------------------+--------+--------------------+
-; altera_reserved_tck ; 15.029 ; 0.000              ;
+; altera_reserved_tck ; 15.389 ; 0.000              ;
 +---------------------+--------+--------------------+
 
 
@@ -219,18 +219,18 @@ No synchronizer chains to report.
 +-----------+-----------------+---------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name          ; Note ;
 +-----------+-----------------+---------------------+------+
-; 73.39 MHz ; 73.39 MHz       ; altera_reserved_tck ;      ;
+; 79.85 MHz ; 79.85 MHz       ; altera_reserved_tck ;      ;
 +-----------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+---------------------------------------------+
-; Slow 1100mV 0C Model Setup Summary          ;
-+---------------------+-------+---------------+
-; Clock               ; Slack ; End Point TNS ;
-+---------------------+-------+---------------+
-; altera_reserved_tck ; 9.854 ; 0.000         ;
-+---------------------+-------+---------------+
++----------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary           ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 10.405 ; 0.000         ;
++---------------------+--------+---------------+
 
 
 +---------------------------------------------+
@@ -238,7 +238,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.369 ; 0.000         ;
+; altera_reserved_tck ; 0.523 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -247,7 +247,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 29.467 ; 0.000         ;
+; altera_reserved_tck ; 29.911 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -256,7 +256,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.830 ; 0.000         ;
+; altera_reserved_tck ; 0.897 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -265,7 +265,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+-------------------+
 ; Clock               ; Slack  ; End Point TNS     ;
 +---------------------+--------+-------------------+
-; altera_reserved_tck ; 14.980 ; 0.000             ;
+; altera_reserved_tck ; 15.411 ; 0.000             ;
 +---------------------+--------+-------------------+
 
 
@@ -280,7 +280,7 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 13.136 ; 0.000         ;
+; altera_reserved_tck ; 13.411 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -289,7 +289,7 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.020 ; 0.000         ;
+; altera_reserved_tck ; 0.196 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -298,7 +298,7 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 30.848 ; 0.000         ;
+; altera_reserved_tck ; 31.153 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -307,7 +307,7 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.338 ; 0.000         ;
+; altera_reserved_tck ; 0.367 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -316,7 +316,7 @@ No synchronizer chains to report.
 +---------------------+--------+--------------------+
 ; Clock               ; Slack  ; End Point TNS      ;
 +---------------------+--------+--------------------+
-; altera_reserved_tck ; 14.917 ; 0.000              ;
+; altera_reserved_tck ; 15.227 ; 0.000              ;
 +---------------------+--------+--------------------+
 
 
@@ -331,7 +331,7 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 13.544 ; 0.000         ;
+; altera_reserved_tck ; 13.802 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -340,7 +340,7 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.037 ; 0.000         ;
+; altera_reserved_tck ; 0.167 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -349,7 +349,7 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 31.123 ; 0.000         ;
+; altera_reserved_tck ; 31.375 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -358,7 +358,7 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.302 ; 0.000         ;
+; altera_reserved_tck ; 0.321 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -367,7 +367,7 @@ No synchronizer chains to report.
 +---------------------+--------+-------------------+
 ; Clock               ; Slack  ; End Point TNS     ;
 +---------------------+--------+-------------------+
-; altera_reserved_tck ; 14.942 ; 0.000             ;
+; altera_reserved_tck ; 15.233 ; 0.000             ;
 +---------------------+--------+-------------------+
 
 
@@ -377,16 +377,16 @@ No synchronizer chains to report.
 No synchronizer chains to report.
 
 
-+---------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                             ;
-+----------------------+-------+-------+----------+---------+---------------------+
-; Clock                ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+----------------------+-------+-------+----------+---------+---------------------+
-; Worst-case Slack     ; 9.609 ; 0.020 ; 29.265   ; 0.302   ; 14.917              ;
-;  altera_reserved_tck ; 9.609 ; 0.020 ; 29.265   ; 0.302   ; 14.917              ;
-; Design-wide TNS      ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
-;  altera_reserved_tck ; 0.000 ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
-+----------------------+-------+-------+----------+---------+---------------------+
++----------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                              ;
++----------------------+--------+-------+----------+---------+---------------------+
+; Clock                ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack     ; 10.111 ; 0.167 ; 29.736   ; 0.321   ; 15.227              ;
+;  altera_reserved_tck ; 10.111 ; 0.167 ; 29.736   ; 0.321   ; 15.227              ;
+; Design-wide TNS      ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  altera_reserved_tck ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
++----------------------+--------+-------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -405,9 +405,9 @@ No synchronizer chains to report.
 ; Pin                 ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +---------------------+--------------+-----------------+-----------------+
 ; sw_write            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; RX                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; clk                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; rst                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; RX                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; FM_Waves_SW         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; sw                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; altera_reserved_tms ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -461,7 +461,7 @@ No synchronizer chains to report.
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 10108    ; 0        ; 56       ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 4867     ; 0        ; 56       ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -471,7 +471,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 10108    ; 0        ; 56       ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 4867     ; 0        ; 56       ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -481,7 +481,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 617      ; 0        ; 0        ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 141      ; 0        ; 0        ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -491,7 +491,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 617      ; 0        ; 0        ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 141      ; 0        ; 0        ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -514,9 +514,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 3     ; 3    ;
+; Unconstrained Clocks            ; 7     ; 7    ;
 ; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 423   ; 423  ;
+; Unconstrained Input Port Paths  ; 4776  ; 4776 ;
 ; Unconstrained Output Ports      ; 2     ; 2    ;
 ; Unconstrained Output Port Paths ; 6     ; 6    ;
 +---------------------------------+-------+------+
@@ -527,9 +527,13 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------------------------+---------------------+------+---------------+
 ; Target                        ; Clock               ; Type ; Status        ;
 +-------------------------------+---------------------+------+---------------+
+; Clock_Divider:inst14|tmp      ;                     ; Base ; Unconstrained ;
 ; Clock_Divider_10:inst10|tmp   ;                     ; Base ; Unconstrained ;
 ; Clock_Divider_UART:inst41|tmp ;                     ; Base ; Unconstrained ;
+; FFT_clk:inst21|tmp            ;                     ; Base ; Unconstrained ;
+; LPF_FIR_2_CLK:inst27|tmp      ;                     ; Base ; Unconstrained ;
 ; altera_reserved_tck           ; altera_reserved_tck ; Base ; Constrained   ;
+; cic_clk:inst24|tmp            ;                     ; Base ; Unconstrained ;
 ; clk                           ;                     ; Base ; Unconstrained ;
 +-------------------------------+---------------------+------+---------------+
 
@@ -588,7 +592,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
-    Info: Processing started: Sun Apr 23 16:28:20 2023
+    Info: Processing started: Thu Apr 27 21:57:11 2023
 Info: Command: quartus_sta FM -c FM
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 19 assignments for entity "FFT" -- entity does not exist in design
@@ -610,284 +614,186 @@ Info (332164): Evaluating HDL-embedded SDC commands
         Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 30MHz   
         Info (332166): if { [string equal quartus_fit $::TimeQuestInfo(nameofexecutable)] } { set_max_delay -to [get_ports { altera_reserved_tdo } ] 0 }
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
-Warning (332174): Ignored filter at qsta_default_script.tcl(1297): *rdptr_g* could not be matched with a clock or keeper or register or port or pin or cell or partition File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332174): Ignored filter at qsta_default_script.tcl(1297): *ws_dgrp|dffpipe_fd9:dffpipe14|dffe15a* could not be matched with a clock or keeper or register or port or pin or cell or partition File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <from> is not an object ID File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-    Info (332050): read_sdc File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <to> is not an object ID File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332174): Ignored filter at qsta_default_script.tcl(1297): *delayed_wrptr_g* could not be matched with a clock or keeper or register or port or pin or cell or partition File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332174): Ignored filter at qsta_default_script.tcl(1297): *rs_dgwp|dffpipe_ed9:dffpipe10|dffe11a* could not be matched with a clock or keeper or register or port or pin or cell or partition File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <from> is not an object ID File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-    Info (332050): read_sdc File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <to> is not an object ID File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332174): Ignored filter at qsta_default_script.tcl(1297): *ws_dgrp|dffpipe_jd9:dffpipe14|dffe15a* could not be matched with a clock or keeper or register or port or pin or cell or partition File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <from> is not an object ID File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-    Info (332050): read_sdc File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <to> is not an object ID File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332174): Ignored filter at qsta_default_script.tcl(1297): *rs_dgwp|dffpipe_id9:dffpipe10|dffe11a* could not be matched with a clock or keeper or register or port or pin or cell or partition File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <from> is not an object ID File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-    Info (332050): read_sdc File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <to> is not an object ID File: C:/intelFPGA/17.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
 Info (332104): Reading SDC File: 'fifo_decimation_4/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc'
-Warning (332174): Ignored filter at fifo_decimation_4_fifo_decimation_4.sdc(49): inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 49
-Warning (332174): Ignored filter at fifo_decimation_4_fifo_decimation_4.sdc(50): inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 50
-Warning (332049): Ignored set_max_skew at fifo_decimation_4_fifo_decimation_4.sdc(30): Argument -from with value [get_keepers {inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 30
-    Info (332050): set_max_skew -from $from_node_list -to $to_node_list -get_skew_value_from_clock_period src_clock_period -skew_value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 30
-Warning (332049): Ignored set_max_skew at fifo_decimation_4_fifo_decimation_4.sdc(30): Argument -to with value [get_keepers {inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 30
-Warning (332049): Ignored set_net_delay at fifo_decimation_4_fifo_decimation_4.sdc(32): argument -from with value [get_keepers {inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 32
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 32
-Warning (332049): Ignored set_max_delay at fifo_decimation_4_fifo_decimation_4.sdc(34): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 34
-    Info (332050): set_max_delay -from $from_node_list -to $to_node_list 100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 34
-Warning (332049): Ignored set_max_delay at fifo_decimation_4_fifo_decimation_4.sdc(34): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 34
-Warning (332049): Ignored set_min_delay at fifo_decimation_4_fifo_decimation_4.sdc(35): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 35
-    Info (332050): set_min_delay -from $from_node_list -to $to_node_list -100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 35
-Warning (332049): Ignored set_min_delay at fifo_decimation_4_fifo_decimation_4.sdc(35): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 35
-Warning (332049): Ignored set_net_delay at fifo_decimation_4_fifo_decimation_4.sdc(42): argument -from with value [get_keepers {inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 42
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 42
-Warning (332174): Ignored filter at fifo_decimation_4_fifo_decimation_4.sdc(62): inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 62
-Warning (332174): Ignored filter at fifo_decimation_4_fifo_decimation_4.sdc(63): inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 63
-Warning (332049): Ignored set_max_skew at fifo_decimation_4_fifo_decimation_4.sdc(30): Argument -from with value [get_keepers {inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 30
-    Info (332050): set_max_skew -from $from_node_list -to $to_node_list -get_skew_value_from_clock_period src_clock_period -skew_value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 30
-Warning (332049): Ignored set_max_skew at fifo_decimation_4_fifo_decimation_4.sdc(30): Argument -to with value [get_keepers {inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 30
-Warning (332049): Ignored set_net_delay at fifo_decimation_4_fifo_decimation_4.sdc(32): argument -from with value [get_keepers {inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 32
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 32
-Warning (332049): Ignored set_max_delay at fifo_decimation_4_fifo_decimation_4.sdc(34): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 34
-    Info (332050): set_max_delay -from $from_node_list -to $to_node_list 100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 34
-Warning (332049): Ignored set_max_delay at fifo_decimation_4_fifo_decimation_4.sdc(34): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 34
-Warning (332049): Ignored set_min_delay at fifo_decimation_4_fifo_decimation_4.sdc(35): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 35
-    Info (332050): set_min_delay -from $from_node_list -to $to_node_list -100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 35
-Warning (332049): Ignored set_min_delay at fifo_decimation_4_fifo_decimation_4.sdc(35): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 35
-Warning (332049): Ignored set_net_delay at fifo_decimation_4_fifo_decimation_4.sdc(42): argument -from with value [get_keepers {inst43|fifo_decimation_4|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 42
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_4/synthesis/submodules/fifo_decimation_4_fifo_decimation_4.sdc Line: 42
 Info (332104): Reading SDC File: 'FM_FFT/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'FFT/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'fifo_decimation_3/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc'
-Warning (332174): Ignored filter at fifo_decimation_3_fifo_decimation_3.sdc(49): inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 49
-Warning (332174): Ignored filter at fifo_decimation_3_fifo_decimation_3.sdc(50): inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 50
-Warning (332049): Ignored set_max_skew at fifo_decimation_3_fifo_decimation_3.sdc(30): Argument -from with value [get_keepers {inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 30
-    Info (332050): set_max_skew -from $from_node_list -to $to_node_list -get_skew_value_from_clock_period src_clock_period -skew_value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 30
-Warning (332049): Ignored set_max_skew at fifo_decimation_3_fifo_decimation_3.sdc(30): Argument -to with value [get_keepers {inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 30
-Warning (332049): Ignored set_net_delay at fifo_decimation_3_fifo_decimation_3.sdc(32): argument -from with value [get_keepers {inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 32
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 32
-Warning (332049): Ignored set_max_delay at fifo_decimation_3_fifo_decimation_3.sdc(34): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 34
-    Info (332050): set_max_delay -from $from_node_list -to $to_node_list 100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 34
-Warning (332049): Ignored set_max_delay at fifo_decimation_3_fifo_decimation_3.sdc(34): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 34
-Warning (332049): Ignored set_min_delay at fifo_decimation_3_fifo_decimation_3.sdc(35): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 35
-    Info (332050): set_min_delay -from $from_node_list -to $to_node_list -100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 35
-Warning (332049): Ignored set_min_delay at fifo_decimation_3_fifo_decimation_3.sdc(35): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 35
-Warning (332049): Ignored set_net_delay at fifo_decimation_3_fifo_decimation_3.sdc(42): argument -from with value [get_keepers {inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 42
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 42
-Warning (332174): Ignored filter at fifo_decimation_3_fifo_decimation_3.sdc(62): inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 62
-Warning (332174): Ignored filter at fifo_decimation_3_fifo_decimation_3.sdc(63): inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 63
-Warning (332049): Ignored set_max_skew at fifo_decimation_3_fifo_decimation_3.sdc(30): Argument -from with value [get_keepers {inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 30
-    Info (332050): set_max_skew -from $from_node_list -to $to_node_list -get_skew_value_from_clock_period src_clock_period -skew_value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 30
-Warning (332049): Ignored set_max_skew at fifo_decimation_3_fifo_decimation_3.sdc(30): Argument -to with value [get_keepers {inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 30
-Warning (332049): Ignored set_net_delay at fifo_decimation_3_fifo_decimation_3.sdc(32): argument -from with value [get_keepers {inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 32
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 32
-Warning (332049): Ignored set_max_delay at fifo_decimation_3_fifo_decimation_3.sdc(34): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 34
-    Info (332050): set_max_delay -from $from_node_list -to $to_node_list 100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 34
-Warning (332049): Ignored set_max_delay at fifo_decimation_3_fifo_decimation_3.sdc(34): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 34
-Warning (332049): Ignored set_min_delay at fifo_decimation_3_fifo_decimation_3.sdc(35): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 35
-    Info (332050): set_min_delay -from $from_node_list -to $to_node_list -100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 35
-Warning (332049): Ignored set_min_delay at fifo_decimation_3_fifo_decimation_3.sdc(35): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 35
-Warning (332049): Ignored set_net_delay at fifo_decimation_3_fifo_decimation_3.sdc(42): argument -from with value [get_keepers {inst23|fifo_decimation_3|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 42
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_3/synthesis/submodules/fifo_decimation_3_fifo_decimation_3.sdc Line: 42
 Info (332104): Reading SDC File: 'NCO_TEST/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'NCO_150/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'fifo_decimation_2/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc'
-Warning (332174): Ignored filter at fifo_decimation_2_fifo_decimation_2.sdc(49): inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 49
-Warning (332174): Ignored filter at fifo_decimation_2_fifo_decimation_2.sdc(50): inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 50
-Warning (332049): Ignored set_max_skew at fifo_decimation_2_fifo_decimation_2.sdc(30): Argument -from with value [get_keepers {inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 30
-    Info (332050): set_max_skew -from $from_node_list -to $to_node_list -get_skew_value_from_clock_period src_clock_period -skew_value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 30
-Warning (332049): Ignored set_max_skew at fifo_decimation_2_fifo_decimation_2.sdc(30): Argument -to with value [get_keepers {inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 30
-Warning (332049): Ignored set_net_delay at fifo_decimation_2_fifo_decimation_2.sdc(32): argument -from with value [get_keepers {inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 32
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 32
-Warning (332049): Ignored set_max_delay at fifo_decimation_2_fifo_decimation_2.sdc(34): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 34
-    Info (332050): set_max_delay -from $from_node_list -to $to_node_list 100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 34
-Warning (332049): Ignored set_max_delay at fifo_decimation_2_fifo_decimation_2.sdc(34): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 34
-Warning (332049): Ignored set_min_delay at fifo_decimation_2_fifo_decimation_2.sdc(35): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 35
-    Info (332050): set_min_delay -from $from_node_list -to $to_node_list -100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 35
-Warning (332049): Ignored set_min_delay at fifo_decimation_2_fifo_decimation_2.sdc(35): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 35
-Warning (332049): Ignored set_net_delay at fifo_decimation_2_fifo_decimation_2.sdc(42): argument -from with value [get_keepers {inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 42
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 42
-Warning (332174): Ignored filter at fifo_decimation_2_fifo_decimation_2.sdc(62): inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 62
-Warning (332174): Ignored filter at fifo_decimation_2_fifo_decimation_2.sdc(63): inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 63
-Warning (332049): Ignored set_max_skew at fifo_decimation_2_fifo_decimation_2.sdc(30): Argument -from with value [get_keepers {inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 30
-    Info (332050): set_max_skew -from $from_node_list -to $to_node_list -get_skew_value_from_clock_period src_clock_period -skew_value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 30
-Warning (332049): Ignored set_max_skew at fifo_decimation_2_fifo_decimation_2.sdc(30): Argument -to with value [get_keepers {inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 30
-Warning (332049): Ignored set_net_delay at fifo_decimation_2_fifo_decimation_2.sdc(32): argument -from with value [get_keepers {inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 32
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 32
-Warning (332049): Ignored set_max_delay at fifo_decimation_2_fifo_decimation_2.sdc(34): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 34
-    Info (332050): set_max_delay -from $from_node_list -to $to_node_list 100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 34
-Warning (332049): Ignored set_max_delay at fifo_decimation_2_fifo_decimation_2.sdc(34): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 34
-Warning (332049): Ignored set_min_delay at fifo_decimation_2_fifo_decimation_2.sdc(35): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 35
-    Info (332050): set_min_delay -from $from_node_list -to $to_node_list -100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 35
-Warning (332049): Ignored set_min_delay at fifo_decimation_2_fifo_decimation_2.sdc(35): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 35
-Warning (332049): Ignored set_net_delay at fifo_decimation_2_fifo_decimation_2.sdc(42): argument -from with value [get_keepers {inst20|fifo_decimation_2|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 42
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation_2/synthesis/submodules/fifo_decimation_2_fifo_decimation_2.sdc Line: 42
 Info (332104): Reading SDC File: 'fifo_decimation/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc'
-Warning (332174): Ignored filter at fifo_decimation_fifo_decimation.sdc(49): inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 49
-Warning (332174): Ignored filter at fifo_decimation_fifo_decimation.sdc(50): inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 50
-Warning (332049): Ignored set_max_skew at fifo_decimation_fifo_decimation.sdc(30): Argument -from with value [get_keepers {inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 30
-    Info (332050): set_max_skew -from $from_node_list -to $to_node_list -get_skew_value_from_clock_period src_clock_period -skew_value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 30
-Warning (332049): Ignored set_max_skew at fifo_decimation_fifo_decimation.sdc(30): Argument -to with value [get_keepers {inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 30
-Warning (332049): Ignored set_net_delay at fifo_decimation_fifo_decimation.sdc(32): argument -from with value [get_keepers {inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|*rdptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 32
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 32
-Warning (332049): Ignored set_max_delay at fifo_decimation_fifo_decimation.sdc(34): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 34
-    Info (332050): set_max_delay -from $from_node_list -to $to_node_list 100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 34
-Warning (332049): Ignored set_max_delay at fifo_decimation_fifo_decimation.sdc(34): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 34
-Warning (332049): Ignored set_min_delay at fifo_decimation_fifo_decimation.sdc(35): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 35
-    Info (332050): set_min_delay -from $from_node_list -to $to_node_list -100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 35
-Warning (332049): Ignored set_min_delay at fifo_decimation_fifo_decimation.sdc(35): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 35
-Warning (332049): Ignored set_net_delay at fifo_decimation_fifo_decimation.sdc(42): argument -from with value [get_keepers {inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|ws_dgrp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 42
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 42
-Warning (332174): Ignored filter at fifo_decimation_fifo_decimation.sdc(62): inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 62
-Warning (332174): Ignored filter at fifo_decimation_fifo_decimation.sdc(63): inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe* could not be matched with a keeper File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 63
-Warning (332049): Ignored set_max_skew at fifo_decimation_fifo_decimation.sdc(30): Argument -from with value [get_keepers {inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 30
-    Info (332050): set_max_skew -from $from_node_list -to $to_node_list -get_skew_value_from_clock_period src_clock_period -skew_value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 30
-Warning (332049): Ignored set_max_skew at fifo_decimation_fifo_decimation.sdc(30): Argument -to with value [get_keepers {inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 30
-Warning (332049): Ignored set_net_delay at fifo_decimation_fifo_decimation.sdc(32): argument -from with value [get_keepers {inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|delayed_wrptr_g*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 32
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 32
-Warning (332049): Ignored set_max_delay at fifo_decimation_fifo_decimation.sdc(34): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 34
-    Info (332050): set_max_delay -from $from_node_list -to $to_node_list 100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 34
-Warning (332049): Ignored set_max_delay at fifo_decimation_fifo_decimation.sdc(34): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 34
-Warning (332049): Ignored set_min_delay at fifo_decimation_fifo_decimation.sdc(35): Argument <from> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 35
-    Info (332050): set_min_delay -from $from_node_list -to $to_node_list -100 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 35
-Warning (332049): Ignored set_min_delay at fifo_decimation_fifo_decimation.sdc(35): Argument <to> is an empty collection File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 35
-Warning (332049): Ignored set_net_delay at fifo_decimation_fifo_decimation.sdc(42): argument -from with value [get_keepers {inst11|fifo_decimation|the_dcfifo_with_controls|the_dcfifo|dual_clock_fifo|auto_generated|rs_dgwp|dffpipe*|dffe*}] contains zero elements File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 42
-    Info (332050): set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock_period dst_clock_period -value_multiplier 0.8 File: C:/Users/Elia Yfrach/Desktop/Project/Processing_Unit/fifo_decimation/synthesis/submodules/fifo_decimation_fifo_decimation.sdc Line: 42
 Info (332104): Reading SDC File: 'NCO_IQ/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'NCO_Data/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'NCO_FM/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'c:/users/elia yfrach/desktop/project/processing_unit/db/ip/ram_fft/submodules/altera_reset_controller.sdc'
 Warning (332060): Node: Clock_Divider_UART:inst41|tmp was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register RAM_FFT:inst44|RAM_FFT_Ram_FFT_Data:ram_fft_data|altsyncram:the_altsyncram|altsyncram_5a92:auto_generated|ram_block1a0~PORT_B_DATA_IN_14 is being clocked by Clock_Divider_UART:inst41|tmp
+    Info (13166): Register UART_Transmitter:inst53|r_TX_Data[4] is being clocked by Clock_Divider_UART:inst41|tmp
 Warning (332060): Node: clk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register RAM_FFT:inst44|RAM_FFT_Ram_FFT_Data:ram_fft_data|altsyncram:the_altsyncram|altsyncram_5a92:auto_generated|ram_block1a0~PORT_A_DATA_IN_11 is being clocked by clk
+    Info (13166): Register Clock_Divider_UART:inst41|tmp is being clocked by clk
 Warning (332060): Node: Clock_Divider_10:inst10|tmp was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register NCO_150:inst1|NCO_150_NCO_150:nco_150|asj_nco_mob_rw:ux122|data_out[9] is being clocked by Clock_Divider_10:inst10|tmp
+Warning (332060): Node: FFT_clk:inst21|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register Integral:inst26|flag_150 is being clocked by FFT_clk:inst21|tmp
+Warning (332060): Node: LPF_FIR_2_CLK:inst27|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register fifo_decimation_4:inst43|fifo_decimation_4_fifo_decimation_4:fifo_decimation_4|fifo_decimation_4_fifo_decimation_4_dcfifo_with_controls:the_dcfifo_with_controls|fifo_decimation_4_fifo_decimation_4_dual_clock_fifo:the_dcfifo|dcfifo:dual_clock_fifo|dcfifo_o7u1:auto_generated|altsyncram_q5d1:fifo_ram|ram_block9a0~porta_address_reg6 is being clocked by LPF_FIR_2_CLK:inst27|tmp
+Warning (332060): Node: cic_clk:inst24|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register CIC2_V3:inst13|output_register[34] is being clocked by cic_clk:inst24|tmp
+Warning (332060): Node: Clock_Divider:inst14|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register fifo_decimation_3:inst23|fifo_decimation_3_fifo_decimation_3:fifo_decimation_3|fifo_decimation_3_fifo_decimation_3_dcfifo_with_controls:the_dcfifo_with_controls|fifo_decimation_3_fifo_decimation_3_dual_clock_fifo:the_dcfifo|dcfifo:dual_clock_fifo|dcfifo_o7u1:auto_generated|altsyncram_q5d1:fifo_ram|ram_block9a0~porta_datain_reg11 is being clocked by Clock_Divider:inst14|tmp
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Node: inst6|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
-Info (332146): Worst-case setup slack is 9.609
+Info (332146): Worst-case setup slack is 10.111
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.609               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.278
+    Info (332119):    10.111               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.522
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.278               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 29.265
+    Info (332119):     0.522               0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 29.736
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    29.265               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.935
+    Info (332119):    29.736               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.928
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.935               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 15.029
+    Info (332119):     0.928               0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 15.389
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.029               0.000 altera_reserved_tck 
+    Info (332119):    15.389               0.000 altera_reserved_tck 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: Clock_Divider_UART:inst41|tmp was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register RAM_FFT:inst44|RAM_FFT_Ram_FFT_Data:ram_fft_data|altsyncram:the_altsyncram|altsyncram_5a92:auto_generated|ram_block1a0~PORT_B_DATA_IN_14 is being clocked by Clock_Divider_UART:inst41|tmp
+    Info (13166): Register UART_Transmitter:inst53|r_TX_Data[4] is being clocked by Clock_Divider_UART:inst41|tmp
 Warning (332060): Node: clk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register RAM_FFT:inst44|RAM_FFT_Ram_FFT_Data:ram_fft_data|altsyncram:the_altsyncram|altsyncram_5a92:auto_generated|ram_block1a0~PORT_A_DATA_IN_11 is being clocked by clk
+    Info (13166): Register Clock_Divider_UART:inst41|tmp is being clocked by clk
 Warning (332060): Node: Clock_Divider_10:inst10|tmp was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register NCO_150:inst1|NCO_150_NCO_150:nco_150|asj_nco_mob_rw:ux122|data_out[9] is being clocked by Clock_Divider_10:inst10|tmp
+Warning (332060): Node: FFT_clk:inst21|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register Integral:inst26|flag_150 is being clocked by FFT_clk:inst21|tmp
+Warning (332060): Node: LPF_FIR_2_CLK:inst27|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register fifo_decimation_4:inst43|fifo_decimation_4_fifo_decimation_4:fifo_decimation_4|fifo_decimation_4_fifo_decimation_4_dcfifo_with_controls:the_dcfifo_with_controls|fifo_decimation_4_fifo_decimation_4_dual_clock_fifo:the_dcfifo|dcfifo:dual_clock_fifo|dcfifo_o7u1:auto_generated|altsyncram_q5d1:fifo_ram|ram_block9a0~porta_address_reg6 is being clocked by LPF_FIR_2_CLK:inst27|tmp
+Warning (332060): Node: cic_clk:inst24|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register CIC2_V3:inst13|output_register[34] is being clocked by cic_clk:inst24|tmp
+Warning (332060): Node: Clock_Divider:inst14|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register fifo_decimation_3:inst23|fifo_decimation_3_fifo_decimation_3:fifo_decimation_3|fifo_decimation_3_fifo_decimation_3_dcfifo_with_controls:the_dcfifo_with_controls|fifo_decimation_3_fifo_decimation_3_dual_clock_fifo:the_dcfifo|dcfifo:dual_clock_fifo|dcfifo_o7u1:auto_generated|altsyncram_q5d1:fifo_ram|ram_block9a0~porta_datain_reg11 is being clocked by Clock_Divider:inst14|tmp
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 9.854
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Node: inst6|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+Info (332146): Worst-case setup slack is 10.405
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.854               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.369
+    Info (332119):    10.405               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.523
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.369               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 29.467
+    Info (332119):     0.523               0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 29.911
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    29.467               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.830
+    Info (332119):    29.911               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.897
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.830               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 14.980
+    Info (332119):     0.897               0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 15.411
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    14.980               0.000 altera_reserved_tck 
+    Info (332119):    15.411               0.000 altera_reserved_tck 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: Clock_Divider_UART:inst41|tmp was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register RAM_FFT:inst44|RAM_FFT_Ram_FFT_Data:ram_fft_data|altsyncram:the_altsyncram|altsyncram_5a92:auto_generated|ram_block1a0~PORT_B_DATA_IN_14 is being clocked by Clock_Divider_UART:inst41|tmp
+    Info (13166): Register UART_Transmitter:inst53|r_TX_Data[4] is being clocked by Clock_Divider_UART:inst41|tmp
 Warning (332060): Node: clk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register RAM_FFT:inst44|RAM_FFT_Ram_FFT_Data:ram_fft_data|altsyncram:the_altsyncram|altsyncram_5a92:auto_generated|ram_block1a0~PORT_A_DATA_IN_11 is being clocked by clk
+    Info (13166): Register Clock_Divider_UART:inst41|tmp is being clocked by clk
 Warning (332060): Node: Clock_Divider_10:inst10|tmp was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register NCO_150:inst1|NCO_150_NCO_150:nco_150|asj_nco_mob_rw:ux122|data_out[9] is being clocked by Clock_Divider_10:inst10|tmp
+Warning (332060): Node: FFT_clk:inst21|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register Integral:inst26|flag_150 is being clocked by FFT_clk:inst21|tmp
+Warning (332060): Node: LPF_FIR_2_CLK:inst27|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register fifo_decimation_4:inst43|fifo_decimation_4_fifo_decimation_4:fifo_decimation_4|fifo_decimation_4_fifo_decimation_4_dcfifo_with_controls:the_dcfifo_with_controls|fifo_decimation_4_fifo_decimation_4_dual_clock_fifo:the_dcfifo|dcfifo:dual_clock_fifo|dcfifo_o7u1:auto_generated|altsyncram_q5d1:fifo_ram|ram_block9a0~porta_address_reg6 is being clocked by LPF_FIR_2_CLK:inst27|tmp
+Warning (332060): Node: cic_clk:inst24|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register CIC2_V3:inst13|output_register[34] is being clocked by cic_clk:inst24|tmp
+Warning (332060): Node: Clock_Divider:inst14|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register fifo_decimation_3:inst23|fifo_decimation_3_fifo_decimation_3:fifo_decimation_3|fifo_decimation_3_fifo_decimation_3_dcfifo_with_controls:the_dcfifo_with_controls|fifo_decimation_3_fifo_decimation_3_dual_clock_fifo:the_dcfifo|dcfifo:dual_clock_fifo|dcfifo_o7u1:auto_generated|altsyncram_q5d1:fifo_ram|ram_block9a0~porta_datain_reg11 is being clocked by Clock_Divider:inst14|tmp
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 13.136
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Node: inst6|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+Info (332146): Worst-case setup slack is 13.411
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    13.136               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.020
+    Info (332119):    13.411               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.196
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.020               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 30.848
+    Info (332119):     0.196               0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 31.153
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    30.848               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.338
+    Info (332119):    31.153               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.367
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.338               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 14.917
+    Info (332119):     0.367               0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 15.227
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    14.917               0.000 altera_reserved_tck 
+    Info (332119):    15.227               0.000 altera_reserved_tck 
 Info: Analyzing Fast 1100mV 0C Model
 Warning (332060): Node: Clock_Divider_UART:inst41|tmp was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register RAM_FFT:inst44|RAM_FFT_Ram_FFT_Data:ram_fft_data|altsyncram:the_altsyncram|altsyncram_5a92:auto_generated|ram_block1a0~PORT_B_DATA_IN_14 is being clocked by Clock_Divider_UART:inst41|tmp
+    Info (13166): Register UART_Transmitter:inst53|r_TX_Data[4] is being clocked by Clock_Divider_UART:inst41|tmp
 Warning (332060): Node: clk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register RAM_FFT:inst44|RAM_FFT_Ram_FFT_Data:ram_fft_data|altsyncram:the_altsyncram|altsyncram_5a92:auto_generated|ram_block1a0~PORT_A_DATA_IN_11 is being clocked by clk
+    Info (13166): Register Clock_Divider_UART:inst41|tmp is being clocked by clk
 Warning (332060): Node: Clock_Divider_10:inst10|tmp was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register NCO_150:inst1|NCO_150_NCO_150:nco_150|asj_nco_mob_rw:ux122|data_out[9] is being clocked by Clock_Divider_10:inst10|tmp
+Warning (332060): Node: FFT_clk:inst21|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register Integral:inst26|flag_150 is being clocked by FFT_clk:inst21|tmp
+Warning (332060): Node: LPF_FIR_2_CLK:inst27|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register fifo_decimation_4:inst43|fifo_decimation_4_fifo_decimation_4:fifo_decimation_4|fifo_decimation_4_fifo_decimation_4_dcfifo_with_controls:the_dcfifo_with_controls|fifo_decimation_4_fifo_decimation_4_dual_clock_fifo:the_dcfifo|dcfifo:dual_clock_fifo|dcfifo_o7u1:auto_generated|altsyncram_q5d1:fifo_ram|ram_block9a0~porta_address_reg6 is being clocked by LPF_FIR_2_CLK:inst27|tmp
+Warning (332060): Node: cic_clk:inst24|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register CIC2_V3:inst13|output_register[34] is being clocked by cic_clk:inst24|tmp
+Warning (332060): Node: Clock_Divider:inst14|tmp was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register fifo_decimation_3:inst23|fifo_decimation_3_fifo_decimation_3:fifo_decimation_3|fifo_decimation_3_fifo_decimation_3_dcfifo_with_controls:the_dcfifo_with_controls|fifo_decimation_3_fifo_decimation_3_dual_clock_fifo:the_dcfifo|dcfifo:dual_clock_fifo|dcfifo_o7u1:auto_generated|altsyncram_q5d1:fifo_ram|ram_block9a0~porta_datain_reg11 is being clocked by Clock_Divider:inst14|tmp
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 13.544
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Node: inst6|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+Info (332146): Worst-case setup slack is 13.802
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    13.544               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.037
+    Info (332119):    13.802               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.167
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.037               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 31.123
+    Info (332119):     0.167               0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 31.375
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    31.123               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.302
+    Info (332119):    31.375               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.321
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.302               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 14.942
+    Info (332119):     0.321               0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 15.233
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    14.942               0.000 altera_reserved_tck 
+    Info (332119):    15.233               0.000 altera_reserved_tck 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 111 warnings
-    Info: Peak virtual memory: 5544 megabytes
-    Info: Processing ended: Sun Apr 23 16:29:37 2023
-    Info: Elapsed time: 00:01:17
-    Info: Total CPU time (on all processors): 00:02:38
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 5627 megabytes
+    Info: Processing ended: Thu Apr 27 21:58:13 2023
+    Info: Elapsed time: 00:01:02
+    Info: Total CPU time (on all processors): 00:02:26
 
 

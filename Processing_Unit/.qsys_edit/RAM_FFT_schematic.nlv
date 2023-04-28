@@ -4,13 +4,13 @@ preplace inst RAM_FFT.clk_0 -pg 1 -lvl 1 -y 70
 preplace inst RAM_FFT.clk_1 -pg 1 -lvl 2 -y 30
 preplace inst RAM_FFT -pg 1 -lvl 1 -y 40 -regy -20
 preplace inst RAM_FFT.Ram_FFT_Data -pg 1 -lvl 3 -y 30
-preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)RAM_FFT.clk_50mhz,(SLAVE)clk_0.clk_in) 1 0 1 NJ
-preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)RAM_FFT.clk_9600hz,(SLAVE)clk_1.clk_in) 1 0 2 NJ 40 NJ
-preplace netloc POINT_TO_POINT<net_container>RAM_FFT</net_container>(MASTER)clk_1.clk,(SLAVE)Ram_FFT_Data.clk2) 1 2 1 570
-preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)RAM_FFT.onchip_memory2_0_s1,(SLAVE)Ram_FFT_Data.s1) 1 0 3 NJ 140 NJ 140 NJ
-preplace netloc POINT_TO_POINT<net_container>RAM_FFT</net_container>(SLAVE)Ram_FFT_Data.clk1,(MASTER)clk_0.clk) 1 1 2 360 100 NJ
-preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)RAM_FFT.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
-preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)Ram_FFT_Data.s2,(SLAVE)RAM_FFT.onchip_memory2_0_s2) 1 0 3 NJ 160 NJ 160 NJ
-preplace netloc FAN_OUT<net_container>RAM_FFT</net_container>(SLAVE)clk_1.clk_in_reset,(SLAVE)Ram_FFT_Data.reset1,(MASTER)clk_0.clk_reset,(SLAVE)Ram_FFT_Data.reset2) 1 1 2 340 120 610
+preplace netloc POINT_TO_POINT<net_container>RAM_FFT</net_container>(SLAVE)Ram_FFT_Data.clk2,(MASTER)clk_1.clk) 1 2 1 570
+preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)Ram_FFT_Data.s1,(SLAVE)RAM_FFT.onchip_memory2_0_s1) 1 0 3 NJ 140 NJ 140 NJ
+preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)RAM_FFT.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)RAM_FFT.clk_500khz,(SLAVE)clk_1.clk_in) 1 0 2 NJ 40 NJ
+preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)clk_0.clk_in,(SLAVE)RAM_FFT.clk_50mhz) 1 0 1 NJ
+preplace netloc EXPORT<net_container>RAM_FFT</net_container>(SLAVE)RAM_FFT.onchip_memory2_0_s2,(SLAVE)Ram_FFT_Data.s2) 1 0 3 NJ 160 NJ 160 NJ
+preplace netloc FAN_OUT<net_container>RAM_FFT</net_container>(MASTER)clk_0.clk_reset,(SLAVE)Ram_FFT_Data.reset1,(SLAVE)Ram_FFT_Data.reset2,(SLAVE)clk_1.clk_in_reset) 1 1 2 340 120 610
+preplace netloc POINT_TO_POINT<net_container>RAM_FFT</net_container>(SLAVE)Ram_FFT_Data.clk1,(MASTER)clk_0.clk) 1 1 2 NJ 100 590
 levelinfo -pg 1 0 130 800
 levelinfo -hier RAM_FFT 140 170 400 690 790

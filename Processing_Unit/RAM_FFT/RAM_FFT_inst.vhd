@@ -1,7 +1,7 @@
 	component RAM_FFT is
 		port (
+			clk_115200khz_clk              : in  std_logic                     := 'X';             -- clk
 			clk_50mhz_clk                  : in  std_logic                     := 'X';             -- clk
-			clk_9600hz_clk                 : in  std_logic                     := 'X';             -- clk
 			onchip_memory2_0_s1_address    : in  std_logic_vector(10 downto 0) := (others => 'X'); -- address
 			onchip_memory2_0_s1_clken      : in  std_logic                     := 'X';             -- clken
 			onchip_memory2_0_s1_chipselect : in  std_logic                     := 'X';             -- chipselect
@@ -22,8 +22,8 @@
 
 	u0 : component RAM_FFT
 		port map (
+			clk_115200khz_clk              => CONNECTED_TO_clk_115200khz_clk,              --       clk_115200khz.clk
 			clk_50mhz_clk                  => CONNECTED_TO_clk_50mhz_clk,                  --           clk_50mhz.clk
-			clk_9600hz_clk                 => CONNECTED_TO_clk_9600hz_clk,                 --          clk_9600hz.clk
 			onchip_memory2_0_s1_address    => CONNECTED_TO_onchip_memory2_0_s1_address,    -- onchip_memory2_0_s1.address
 			onchip_memory2_0_s1_clken      => CONNECTED_TO_onchip_memory2_0_s1_clken,      --                    .clken
 			onchip_memory2_0_s1_chipselect => CONNECTED_TO_onchip_memory2_0_s1_chipselect, --                    .chipselect

@@ -1,0 +1,89 @@
+[33mcommit 7b49d3774892d5a46dae2d344c0e29ae45ffd4e5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Sun Apr 23 16:42:23 2023 +0300
+
+    Work with MATLAB FFT Data Uart
+
+[33mcommit 26dfa9e8173f64146f02e36b1d659667e36915e8[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Mon Apr 3 17:29:32 2023 +0300
+
+    work with matlab sending 32bits only one
+
+[33mcommit 7b5704d50c15134a8d83d533855fda8c487cb937[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Dec 21 19:11:29 2022 +0200
+
+    Project Working with changes in all filters
+
+[33mcommit da9c6aca6d6fca7e240111d26115d7f5fe7621b6[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Tue Dec 20 19:44:58 2022 +0200
+
+    Work With chages in Filters Sizes
+
+[33mcommit 3c8da4e52e3453a472d1752390f904094e65df02[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Dec 7 17:18:25 2022 +0200
+
+    Work With ADC & Signal Generator
+
+[33mcommit e2f74658ff3b0bad2dee85b815973d5562a8165c[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Nov 16 16:53:41 2022 +0200
+
+    with adc adapter
+
+[33mcommit 9bf5debab1b3f6762ce88e0b8d714be1cec66ef2[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Nov 16 12:47:58 2022 +0200
+
+    Simolation Finished
+
+[33mcommit f6fb5befc292d75d42e61d97e57a4ddb4ce17fac[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Nov 9 11:52:54 2022 +0200
+
+    Update: Work until 150Hz integral
+
+[33mcommit 3ee3c0fe5b3c25285cfe6e61b8a1ca2190accd30[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Fri Sep 16 16:53:55 2022 +0300
+
+    work with FFT thats says the FM FREQ
+
+[33mcommit 8433bfdd84c0cae66b7e9f47a9e82b914ef5b129[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Sep 14 15:24:32 2022 +0300
+
+    Added 150Hz detector flag
+
+[33mcommit cf09ce39ef71b846f4cdb11b02c54db7195ad2bd[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Sep 7 16:07:48 2022 +0300
+
+    work with cic
+
+[33mcommit 3f1ae28c509fbca793dd794730f67ecdfe1bc321[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Sep 7 09:47:09 2022 +0300
+
+    Work With FFT
+
+[33mcommit 9b72b84eec2ae148fa3270b39b96db9599498569[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Tue Sep 6 16:06:56 2022 +0300
+
+    work until 150 fft
+
+[33mcommit 27fe2823367faa3274bfcaa14d031fe1c68460ad[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Aug 24 17:25:12 2022 +0300
+
+    Word Until Sine 150Hz
+
+[33mcommit 5ffed4ca8cab197933a675d7b6d9344d57e293a5[m
+Author: unknown <ea.ifrach@gmail.com>
+Date:   Wed Aug 24 15:42:04 2022 +0300
+
+    First Save

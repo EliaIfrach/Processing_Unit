@@ -1,6 +1,6 @@
 	RAM_FFT u0 (
+		.clk_115200khz_clk              (<connected-to-clk_115200khz_clk>),              //       clk_115200khz.clk
 		.clk_50mhz_clk                  (<connected-to-clk_50mhz_clk>),                  //           clk_50mhz.clk
-		.clk_9600hz_clk                 (<connected-to-clk_9600hz_clk>),                 //          clk_9600hz.clk
 		.onchip_memory2_0_s1_address    (<connected-to-onchip_memory2_0_s1_address>),    // onchip_memory2_0_s1.address
 		.onchip_memory2_0_s1_clken      (<connected-to-onchip_memory2_0_s1_clken>),      //                    .clken
 		.onchip_memory2_0_s1_chipselect (<connected-to-onchip_memory2_0_s1_chipselect>), //                    .chipselect

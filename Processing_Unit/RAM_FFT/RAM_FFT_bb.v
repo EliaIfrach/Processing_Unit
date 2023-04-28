@@ -1,7 +1,7 @@
 
 module RAM_FFT (
+	clk_115200khz_clk,
 	clk_50mhz_clk,
-	clk_9600hz_clk,
 	onchip_memory2_0_s1_address,
 	onchip_memory2_0_s1_clken,
 	onchip_memory2_0_s1_chipselect,
@@ -18,8 +18,8 @@ module RAM_FFT (
 	onchip_memory2_0_s2_byteenable,
 	reset_reset_n);	
 
+	input		clk_115200khz_clk;
 	input		clk_50mhz_clk;
-	input		clk_9600hz_clk;
 	input	[10:0]	onchip_memory2_0_s1_address;
 	input		onchip_memory2_0_s1_clken;
 	input		onchip_memory2_0_s1_chipselect;

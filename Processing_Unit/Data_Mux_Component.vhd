@@ -23,7 +23,7 @@ architecture rtl of Data_Mux_Component is
     signal r_Ram_Data       : std_logic_vector(31 downto 0); --Data Holder
     signal r_Data_index     : integer range 0 to 4;
     signal r_flag_data      : std_logic;
-    signal r_Data_Divider   : integer range 0 to 16; --added 15
+    signal r_Data_Divider   : integer range 0 to 16;
 begin
     process(i_rst, i_clk)
         begin

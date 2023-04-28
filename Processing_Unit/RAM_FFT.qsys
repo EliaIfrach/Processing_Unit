@@ -54,8 +54,8 @@
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
+ <interface name="clk_115200khz" internal="clk_1.clk_in" type="clock" dir="end" />
  <interface name="clk_50mhz" internal="clk_0.clk_in" type="clock" dir="end" />
- <interface name="clk_9600hz" internal="clk_1.clk_in" type="clock" dir="end" />
  <interface
    name="onchip_memory2_0_s1"
    internal="Ram_FFT_Data.s1"
@@ -106,7 +106,7 @@
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
  <module name="clk_1" kind="clock_source" version="17.0" enabled="1">
-  <parameter name="clockFrequency" value="9600" />
+  <parameter name="clockFrequency" value="115200" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />

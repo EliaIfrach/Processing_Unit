@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="RAM_FFT" kind="system" version="17.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2023.04.23.16:18:31 -->
+ <!-- 2023.04.27.21:48:32 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1682255907</value>
+  <value>1682621308</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -1803,7 +1803,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="clockFrequency">
    <type>long</type>
-   <value>9600</value>
+   <value>115200</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1901,7 +1901,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockRate">
     <type>java.lang.Long</type>
-    <value>9600</value>
+    <value>115200</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -1979,7 +1979,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockRate">
     <type>long</type>
-    <value>9600</value>
+    <value>115200</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -3234,5 +3234,5 @@ parameters are a RESULT of the module parameters. -->
   <version>17.0</version>
  </plugin>
  <reportVersion>17.0 595</reportVersion>
- <uniqueIdentifier>FC017C3351C700000187AE441484</uniqueIdentifier>
+ <uniqueIdentifier>FC017C3351C700000187C40BA9DB</uniqueIdentifier>
 </EnsembleReport>

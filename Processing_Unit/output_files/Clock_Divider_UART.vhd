@@ -23,7 +23,7 @@ begin
         tmp<='0';
     elsif(clk'event and clk='1') then
         count <=count+1;
-        if (count = 2604) then
+        if (count = 217) then
              tmp <= NOT tmp;
             count <= 1;
         end if;
